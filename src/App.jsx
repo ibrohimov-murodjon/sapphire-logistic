@@ -1,9 +1,14 @@
+import { Navbar, Visitka } from "./components";
+import { Hero, Stronger } from "./sections";
 
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Visitka/>
+      <Navbar/>
+      <Hero/>
+      <Stronger/>
     </>
   );
 }
