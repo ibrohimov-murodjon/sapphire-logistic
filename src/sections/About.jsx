@@ -64,8 +64,7 @@ const About = () => {
    
    </div>
    <marquee className="absolute bottom-[-100px] w-full"
-  direction="left"
->
+  direction="left" >
   <ul className="flex items-center gap-12 w-full">
     {AboutData.map((element) => {
         return(
