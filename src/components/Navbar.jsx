@@ -9,11 +9,11 @@ const Navbar = () => {
         <img src={logo} className="w-30 h-12" alt="" />
     </a>
     <ul className="flex items-center gap-x-5">
-    <li><a href="#" className="text-white">Home</a></li>
-    <li><a href="#" className="text-white">Services</a></li>
-    <li><a href="#" className="text-white">Team</a></li>
-    <li><a href="#" className="text-white">Blog</a></li>
-    <li><a href="#" className="text-white">Contact</a></li>
+    <li><a href="#home" className="text-white">Home</a></li>
+    <li><a href="#services" className="text-white">Services</a></li>
+    <li><a href="#team" className="text-white">Team</a></li>
+    <li><a href="#blog" className="text-white">Blog</a></li>
+    <li><a href="#contact" className="text-white">Contact</a></li>
     </ul>
     <div className="flex items-center gap-x-16">
     <div className="flex items-center w-full max-w-[200px] gap-x-3">

@@ -1,5 +1,5 @@
 import { Navbar, Visitka } from "./components";
-import { Hero, Stronger } from "./sections";
+import { About, Hero, Stronger } from "./sections";
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
       <Navbar/>
       <Hero/>
       <Stronger/>
+      <About/>
     </>
   );
 }

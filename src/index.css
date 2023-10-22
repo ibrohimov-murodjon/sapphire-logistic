@@ -59,9 +59,9 @@ body {
     background-size: cover;
 }
 .slider3{
-    background: url(./assets/hero-slider-1.png);
+    background: url(./assets/hero-slider-3.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center right;
     background-size: cover;
 }
 
@@ -159,4 +159,19 @@ nav {
     100% {
         width: 75%;
     }
+}
+
+/* About */
+.about{
+    width: 100%;
+    
+    background: url(./assets/about-bgg.svg);
+    background-color: #ffdb53;
+    background-position:  top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about::before{
+content: "";
+background-color: #123456;
 }
