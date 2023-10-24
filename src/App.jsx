@@ -1,5 +1,5 @@
 import { Navbar, Visitka } from "./components";
-import { About, Hero, Stronger, Team } from "./sections";
+import { About, Hero, Proces, Sender, Stronger, Team } from "./sections";
 
 function App() {
 
@@ -11,6 +11,8 @@ function App() {
       <Stronger/>
       <About/>
       <Team/>
+      <Sender/>
+      <Proces/>
     </>
   );
 }
