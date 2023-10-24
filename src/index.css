@@ -175,3 +175,20 @@ nav {
 content: "";
 background-color: #123456;
 }
+
+.sender_section{
+    background-image:url(./assets/bg-word-yellow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* react-multi-carousel  customer*/
+.react-multi-carousel-item  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.react-multiple-carousel__arrow::before{
+    color: black;
+}

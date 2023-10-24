@@ -1,5 +1,5 @@
 import { AboutSlide1, facebook } from '../assets'
-import { Button } from '../components'
+import { Button, TeamSlider } from '../components'
 
 const Team = () => {
   return (
@@ -104,7 +104,8 @@ const Team = () => {
                 </span>
             </li>
         </ul>
-        <Button title='Meet full team' bgColor='#ffdb53' color='black'/>
+        <Button title='Meet full team' bgColor='#ffdb53' color='black' />
+        <TeamSlider/>
         </div>
     </div>
   )
