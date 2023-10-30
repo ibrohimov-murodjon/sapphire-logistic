@@ -1,4 +1,12 @@
-import { Clock, facebook, Instagram, Linkedin, Location, Twitter, YouTube } from "../assets";
+import {
+  Clock,
+  facebook,
+  Instagram,
+  Linkedin,
+  Location,
+  Twitter,
+  YouTube,
+} from "../assets";
 
 const Visitka = () => {
   return (
@@ -8,7 +16,9 @@ const Visitka = () => {
           <img src={Clock} className="w-5 h-5" alt="" />
           <small className="flex items-center">
             <h4 className="font-bold">Opening Hours:</h4>
-            <p>Mon-Fri 6am to 11am > Closed on Weekends</p>
+            <p>
+              Mon-Fri 6am to 11am <span>&gt;</span> Closed on Weekends
+            </p>
           </small>
         </span>
         <div className="flex items-center gap-x-16">
