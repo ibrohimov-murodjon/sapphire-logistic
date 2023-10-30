@@ -1,10 +1,14 @@
-
-const Button = ({bgColor, title, color}) => {
+const Button = ({ bgColor, title, color, hover, textClr }) => {
   return (
-    <div style={{backgroundColor: `${bgColor}`}} className={`text-${color}  ${bgColor === 'transparent' ? 'border-[2px] border-[#87ead5]' : ""} btn-grad cursor-pointer w-[250px] w-full max-w-[150px] py-2 text-center font-krub tracking-wide font-bold  z-[10] hover:scale-[1.03] active:scale-[0.99]` }>
-        {title}
-    </div>
-  )
-}
+    <button
+      style={{ backgroundColor: `${bgColor}` }}
+      className={`text-${color}  ${
+        bgColor === "transparent" ? "border-[2px] border-[#ED3237]" : ""
+      } btn-grad text-${textClr} cursor-pointer w-full max-w-[250px] py-3 px-6 text-center font-krub tracking-wide block font-bold  z-[10] hover:scale-[1.03] active:scale-[0.99]`}
+    >
+      {title}
+    </button>
+  );
+};
 
-export default Button
+export default Button;
