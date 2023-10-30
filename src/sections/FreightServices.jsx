@@ -44,7 +44,7 @@ const changeTransport = [
         {id:5, title:"Intermodal Shipping"},
         {id:6, title:"Intermodal Shipping"}
     ],
-    img: LandTruck,
+    img: ShipImg,
 }
 ];
 const FreightServices = () => {
@@ -62,7 +62,7 @@ const FreightServices = () => {
               <span
                 onClick={() => setName(link)}
                 key={id}
-                className="flex items-center flex-col w-full max-w-[150px] bg-yellow-300 py-3"
+                className="flex items-center flex-col w-full max-w-[150px] bg-yellow-300 py-3 hover:scale-[1.02] active:scale-[0.99]"
               >
                 <img src={img} className="w-10 h-10" />
                 <p>{name}</p>
@@ -71,7 +71,6 @@ const FreightServices = () => {
           })}
         </ul>
         <hr className="mb-3" />
-        {/* <ServicesEl/> */}
         {name === 'airplane' ? <ServicesEl data={changeTransport[0]}/> :  name === 'train' ? <ServicesEl data={changeTransport[1]}/> : '' }
       </div>
     </div>
