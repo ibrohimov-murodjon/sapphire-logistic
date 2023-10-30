@@ -4,10 +4,14 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'heroSlider1': "url('./src/assets/hero-slider-1.png')",
-      }
+        heroSlider1: "url('./src/assets/hero-slider-1.png')",
+      },
+      fontWeight: {
+        regular: "400",
+        medium: "500",
+        bold: "600",
+      },
     },
   },
   plugins: [],
 };
-
