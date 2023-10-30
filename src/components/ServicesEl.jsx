@@ -6,7 +6,6 @@ import {
   import { Button } from "../components";
 
 const ServicesEl = ({data}) => {
-    console.log(data.advantage);
   return (
     <div className="flex items-start justify-around mt-9">
           <img

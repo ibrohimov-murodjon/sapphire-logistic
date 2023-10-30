@@ -183,6 +183,20 @@ background-color: #123456;
     background-size: cover;
 }
 
+/* HERO-SLIDER-CUSTOMER */
+.swiper-pagination{
+    margin-right: 2%;
+}
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+.swiper-pagination-bullet-active{
+    background-color: orange;
+    padding: 5px;
+}
+
 /* react-multi-carousel  customer*/
 .react-multi-carousel-item  {
     display: flex;

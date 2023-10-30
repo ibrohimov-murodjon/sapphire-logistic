@@ -19,6 +19,7 @@ export default function Hero() {
         slidesPerView={1}
         spaceBetween={30}
         mousewheel={true}
+        className="relative"
         effect={'fade'}
         autoplay={{
           delay: 2500,
