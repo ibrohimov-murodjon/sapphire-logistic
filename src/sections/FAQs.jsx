@@ -9,30 +9,39 @@ const faqData = [
 ]
 const FAQs = () => {
   return (
-    <div className="bg-[#111f22] py-24">
-    <div className="myContainer mx-auto flex items-start justify-around">
+    <div className="lightBlue py-24">
+      <div className="myContainer mx-auto flex items-start justify-around">
         <div className="flex flex-col">
-            <h2 className="text-[40px] text-white w-full max-w-[400px] mb-3">What mostly people ask us about</h2>
-                <small className="FAQs h-[200px] w-[300px] rounded-lg flex items-start justify-center flex-col pl-8 ] " >
-                    <h5 className="text-white font-bold text-[18px] mb-2">Have more questions?</h5>
-                    <p className="text-white text-[14px] mb-2">24/7 customer support is always ready to answer all your questions</p>
-                    <Button title='Ask Here' bgColor='#f7c502' color='black'/>
-                </small>
+          <h2 className="text-[40px] text-black w-full max-w-[400px] mb-3">
+            What mostly people ask us about
+          </h2>
+          <small className="FAQs h-[200px] w-[300px] rounded-lg flex items-start justify-center flex-col pl-8 ] ">
+            <h5 className=" font-bold text-[18px] mb-2">
+              Have more questions?
+            </h5>
+            <p className="text-[14px] mb-2">
+              24/7 customer support is always ready to answer all your questions
+            </p>
+            <Button title="Ask Here" bgColor="#3E4095" />
+          </small>
         </div>
         <div>
-           <ul className="flex flex-col gap-y-3">
-           {faqData.map((element) => {
-                return(
-                    <>
-                    <FaqQuestions question={element.question} response={element.responce}/>
-                    </>
-                )
+          <ul className="flex flex-col gap-y-3">
+            {faqData.map((element) => {
+              return (
+                <>
+                  <FaqQuestions
+                    question={element.question}
+                    response={element.responce}
+                  />
+                </>
+              );
             })}
-           </ul>
+          </ul>
         </div>
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
 export default FAQs

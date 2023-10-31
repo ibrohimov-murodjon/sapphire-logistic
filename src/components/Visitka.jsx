@@ -10,7 +10,7 @@ import {
 
 const Visitka = () => {
   return (
-    <div id="visitka" className="flex items-center">
+    <div className="team h-[80px] flex items-center">
       <div className="myContainer flex items-center justify-between">
         <span className="flex items-center gap-x-1">
           <img src={Clock} className="w-5 h-5" alt="" />
@@ -26,7 +26,7 @@ const Visitka = () => {
             <img src={Location} className="w-5 h-5" alt="" />
             <small className="flex items-center gap-x-2">
               <h4 className="font-bold text-[14px]">Location Near you:</h4>
-              <p className="text-gray-600 font-bold text-[14px]"> New York</p>
+              <p className="font-bold text-[14px]"> New York</p>
             </small>
           </span>
           <ul className="flex items-center gap-x-3">

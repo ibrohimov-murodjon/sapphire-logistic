@@ -3,7 +3,7 @@ import { Button, TeamSlider } from '../components'
 
 const Team = () => {
   return (
-    <div className="pb-32 pt-48 bg-[#111f22]">
+    <div className="team pb-32 pt-48 bg-[#111f22]">
       <div className="mcContainer flex items-center flex-col justify-center ">
         <h1 className="text-center  text-[40px] font-bold w-full max-w-[600px]">
           Meet the core team members who runs Sapphire
@@ -142,7 +142,7 @@ const Team = () => {
             </span>
           </li>
         </ul>
-        <Button title="Meet full team" bgColor="#ffdb53" color="black" />
+        <Button title="Meet full team" bgColor="transparent" />
         <TeamSlider />
       </div>
     </div>

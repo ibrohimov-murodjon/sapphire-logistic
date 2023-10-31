@@ -45,9 +45,9 @@ body {
 body {
   font-family: "Montserrat";
   font-size: 14px;
-  color: #000;
+  color: #fff;
   margin: 0;
-  padding: 0;
+  padding: 0; --space: 2rem;
 }
 
 @layer {
@@ -65,6 +65,30 @@ body {
   }
 }
 
+.advantages {
+  background: rgb(62, 64, 149);
+  background: linear-gradient(
+    125deg,
+    rgba(62, 64, 149, 1) 0%,
+    rgba(237, 50, 55, 1) 100%
+  );
+}
+.team {
+  background: rgb(62, 64, 149);
+  background: linear-gradient(
+    318deg,
+    rgba(62, 64, 149, 1) 0%,
+    rgba(237, 50, 55, 1) 100%
+  );
+}
+.lightBlue {
+  /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% ); */
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(204, 228, 247, 1) 11.2%,
+    rgba(237, 246, 250, 1) 100.2%
+  );
+}
 .swiper {
   width: 100%;
   height: 800px;
@@ -106,18 +130,11 @@ body {
   object-fit: cover;
 }
 
-.hero-text {
-  color: transparent;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #3e4095;
-}
 
 /* Navbar */
 nav {
   width: 100%;
   height: 100px;
-  /* border-bottom: 1px solid #ED3237; */
-  /* background-image: linear-gradient(45deg, #123456 80%, rgb(68, 125, 194) 80%); */
 }
 #visitka {
   width: 100%;
@@ -146,7 +163,7 @@ nav {
   position: relative;
   width: 100%;
   height: 1rem;
-  background-color: grey;
+  background-color: #fff;
   border-radius: 25px;
   margin-top: 0.2rem;
 }
@@ -155,7 +172,7 @@ nav {
   width: 50%;
   height: 100%;
   position: absolute;
-  background-color: #3E4095;
+  background-color: #3e4095;
   border-radius: 25px;
 }
 .skill-bar .bar .oneAnime {
@@ -206,7 +223,7 @@ nav {
   width: 100%;
 
   background: url(./assets/about-bgg.svg);
-  background-color: #ffdb53;
+  background-color: #3e4095;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -217,10 +234,11 @@ nav {
 }
 
 .sender_section {
-  background-image: url(./assets/bg-word-yellow.png);
+  background-image: url(./assets/bg-attachment.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /* react-multi-carousel  customer*/
@@ -230,9 +248,8 @@ nav {
   justify-content: center;
 }
 .react-multiple-carousel__arrow::before {
-  color: black;
+  color: #fff;
 }
-
 /* FAQ */
 
 .FAQs {
@@ -240,4 +257,51 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+/* Marquee */
+.marquee {
+  --duration: 60s;
+  --gap: var(--space);
+
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.marquee--borders {
+  border-block: 3px solid dodgerblue;
+  padding-block: 0.75rem;
+}
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: calc(var(--duration) / -2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
 }

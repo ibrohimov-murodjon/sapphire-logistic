@@ -34,7 +34,7 @@ export default function Hero() {
               Welcome to sapphire logistic
             </span>
             <h1 className="flex flex-wrap leading-[80px] items-center  text-[64px] font-bold text-white w-full max-w-[450px] mb-2 ">
-              World <span className="hero-text">class</span>Transportation
+              World class Transportation
             </h1>
             <p className="text-white w-full max-w-[650px] mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
@@ -80,6 +80,6 @@ export default function Hero() {
           </div>
         </SwiperSlide> */}
       </Swiper>
-    </>
+    </> 
   );
 }

@@ -11,6 +11,9 @@ export default {
         medium: "500",
         bold: "600",
       },
+      colors: {
+        bgVideo: "rgba(0,0,0,.6)",
+      },
     },
   },
   plugins: [],
