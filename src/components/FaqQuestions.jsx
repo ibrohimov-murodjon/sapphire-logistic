@@ -8,10 +8,10 @@ const FaqQuestions = ({ response, question }) => {
   };
   return (
     <div className="flex flex-col">
-      <div className="flex items-center w-full max-w-[650px] gap-x-5 bg-[#293436] p-3">
+      <div className="flex items-center w-full max-w-[650px] gap-x-5 team p-3">
         <h1 className="font-bold text-white">{question}</h1>
         <span
-          className="p-2 bg-[#f7c502] rounded-full"
+          className="p-2 lightBlue rounded-full"
           onClick={() => handleClick()}
         >
           {" "}
@@ -21,7 +21,7 @@ const FaqQuestions = ({ response, question }) => {
       <div
         className={`${
           !info ? "hidden" : "block"
-        } text-white w-full max-w-[430px] mt-3 mb-4 pl-4`}
+        } text-black w-full max-w-[430px] mt-3 mb-4 pl-4`}
       >
         {response}
       </div>

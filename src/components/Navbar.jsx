@@ -26,7 +26,7 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="sticky-header relative shadow-2xl bg-opacity-20 backdrop-filter backdrop-blur-md pt-3 tabletLgMd:pt-0">
+    <nav className="sticky-header relative shadow-2xl bg-black bg-opacity-30 backdrop-filter backdrop-blur-md pt-3 tabletLgMd:pt-0">
       <div className="myContainer  mx-auto flex items-center justify-between pt-3">
         <a href="#" className="w-full">
           <img src={logo} className="w-30 h-10" alt="" />
@@ -56,7 +56,7 @@ const Navbar = () => {
               </a>
             </span>
           </div>
-          <Button bgColor="green" title="Request a quote" />
+          <Button bgColor="#3E4095" title="Request a quote" />
         </div>
       </div>
     </nav>

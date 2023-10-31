@@ -1,11 +1,9 @@
-import { Box, Money, Truck } from '../assets';
-import StackImg from '../assets/stack-img.png'
-
-
+import { Box, Money, Truck } from "../assets";
+import StackImg from "../assets/stack-img.png";
 
 const Stronger = () => {
   return (
-    <div className="bg-gradient-to-r from-[#3e4095] to-[#ed3237]">
+    <div className="advantages">
       <div className="myContainer flex items-start justify-between pt-20 pb-16">
         <div className="flex flex-col ">
           <p className="uppercase mb-2 text-white">Why choose sapphire</p>
@@ -82,7 +80,7 @@ const Stronger = () => {
             <div className="skill-bar mt-4">
               <div className="info">
                 <p className="font-bold mb-2 text-white">Shipping by Road</p>
-                <p className="persent text-gray-400">92%</p>
+                <p className="persent">92%</p>
               </div>
               <div className="bar">
                 <span className="oneAnime"></span>
@@ -93,7 +91,7 @@ const Stronger = () => {
                 <p className="font-bold mb-2 text-white">
                   Pallet Freight Shipping
                 </p>
-                <p className="persent text-gray-400">85%</p>
+                <p className="persent">85%</p>
               </div>
               <div className="bar">
                 <span className="twoAnime"></span>
@@ -102,7 +100,7 @@ const Stronger = () => {
             <div className="skill-bar mt-4">
               <div className="info">
                 <p className="font-bold mb-2 text-white">Intermodal Shipping</p>
-                <p className="persent text-gray-400">75%</p>
+                <p className="persent">75%</p>
               </div>
               <div className="bar">
                 <span className="threeAnime"></span>
