@@ -1,4 +1,4 @@
-const Button = ({ bgColor, title, color, hover, textClr }) => {
+const Button = ({ bgColor, title, color, hover, textClr, padding }) => {
   return (
     <button
       style={{ backgroundColor: `${bgColor}` }}

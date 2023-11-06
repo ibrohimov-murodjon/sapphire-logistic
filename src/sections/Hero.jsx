@@ -1,9 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navbar } from "../components";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/effect-fade";
 
 // import required modules
 import { Autoplay, Mousewheel, EffectFade, Pagination } from "swiper/modules";
@@ -28,7 +24,7 @@ export default function Hero() {
         modules={[Autoplay, Mousewheel, Pagination, EffectFade]}
         className="mySwiper"
       >
-        <SwiperSlide className="slider1 ">
+        <SwiperSlide className="slider1 hero-swiper">
           <div className="flex myContainer flex-col w-full ">
             <span className=" border-[1px] mb-2  border-[#ED3237] bg-transparent px-5 w-full max-w-[250px] text-center py-1 rounded-3xl text-[10px] text-[#fff] font-bold uppercase">
               Welcome to sapphire logistic
@@ -80,6 +76,6 @@ export default function Hero() {
           </div>
         </SwiperSlide> */}
       </Swiper>
-    </> 
+    </>
   );
 }
