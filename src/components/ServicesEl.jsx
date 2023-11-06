@@ -2,7 +2,6 @@ import { AirplaneSectionImg, CallImg, RightArrow } from "../assets";
 import { Button } from "../components";
 
 const ServicesEl = ({ data }) => {
-  console.log(data.advantage);
   return (
     <div className="flex items-start justify-around mt-9">
       <img src={data.img} className="w-[480px] h-[370px]" />

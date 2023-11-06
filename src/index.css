@@ -47,7 +47,19 @@ body {
   font-size: 14px;
   color: #fff;
   margin: 0;
-  padding: 0; --space: 2rem;
+  padding: 0;
+  --space: 2rem;
+}
+:root {
+  --body-background-color: #e5f4ff;
+  --v-progress-left: 50px;
+  --v-progress-item-height-width: 30px;
+  --v-progress-line-height: 75px;
+  --v-progress-line-width: 3px;
+  --v-progress-gap: 13px;
+  --blue: #0081c9;
+  --green: #159895;
+  --light-blue: #5bc0f8;
 }
 
 @layer {
@@ -66,7 +78,6 @@ body {
 }
 
 .advantages {
-  background: rgb(62, 64, 149);
   background: linear-gradient(
     125deg,
     rgba(62, 64, 149, 1) 0%,
@@ -74,7 +85,6 @@ body {
   );
 }
 .team {
-  background: rgb(62, 64, 149);
   background: linear-gradient(
     318deg,
     rgba(62, 64, 149, 1) 0%,
@@ -89,16 +99,15 @@ body {
     rgba(237, 246, 250, 1) 100.2%
   );
 }
-.swiper {
+.mySwiper {
   width: 100%;
   height: 800px;
   margin-top: -100px;
 }
 
-.swiper-slide {
+.hero-swiper {
   /* text-align: center; */
   font-size: 18px;
-  background-color: blue;
 
   /* Center slide text vertically */
   display: flex;
@@ -123,13 +132,33 @@ body {
   background-size: cover;
 }
 
-.swiper-slide img {
+.hero-swiper img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* calculation-slider */
+.calculation-slider {
+  display: block;
+  /* width: 60%; */
+}
+
+.arrow-right {
+  transform: rotate(180deg);
+}
+
+.float-label-input {
+  margin: 32px 0;
+}
+
+.float-label-input:focus-within label,
+.float-label-input input:not(:placeholder-shown) + label {
+  transform: translateY(-2.5rem) scale(0.75);
+  background-color: transparent;
+  font-size: 20px;
+}
 
 /* Navbar */
 nav {
@@ -257,6 +286,72 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+/* Progress */
+
+.v-progress ul {
+  list-style: none;
+}
+
+.v-progress-item {
+  position: relative;
+  /* left: var(--v-progress-left); */
+  margin-left: var(--v-progress-left);
+  height: var(--v-progress-item-height-width);
+  line-height: var(--v-progress-item-height-width);
+  margin-bottom: var(--v-progress-line-height);
+  --v-progress-border: 8px;
+}
+
+.v-progress-item:last-child {
+  margin-bottom: 0px;
+}
+
+.v-progress-item:last-child:after {
+  border-left: 0px;
+}
+
+.v-progress-item:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: var(--v-progress-item-height-width);
+  height: var(--v-progress-item-height-width);
+  left: calc(0px - var(--v-progress-left));
+  border-radius: 50%;
+}
+
+.v-progress-item:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: calc(var(--v-progress-line-height) - var(--v-progress-gap));
+  top: calc(var(--v-progress-item-height-width) + var(--v-progress-gap) / 2);
+  left: calc(
+    0px - var(--v-progress-left) + var(--v-progress-item-height-width) / 2 -
+      var(--v-progress-line-width) / 2
+  );
+  border-left: var(--v-progress-line-width) solid #ccc;
+}
+
+.v-progress-item.completed:after {
+  border-color: #3e4095;
+}
+
+.v-progress-item.completed:before {
+  content: "";
+  background: url("./assets/done-icon.svg");
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  height: calc(var(--v-progress-border) + var(--v-progress-item-height-width));
+  width: calc(var(--v-progress-border) + var(--v-progress-item-height-width));
+  line-height: calc(
+    var(--v-progress-border) + var(--v-progress-item-height-width)
+  );
+  left: calc(0px - var(--v-progress-left) - var(--v-progress-border) / 2);
+  top: calc(0px - var(--v-progress-border) + var(--v-progress-border) / 2);
 }
 
 /* Marquee */
