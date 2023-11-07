@@ -4,7 +4,8 @@ const Footer = () => {
   return (
     <div className="pt-10 bg-[#3e4095]">
         <div className="myContainer pb-2">
-            <div className="flex items-start justify-between">
+            <div className="flex items-start justify-between ">
+            <div className="flex items-start gap-x-36">
             <div className="flex items-start flex-col">
                 <a className="flex items-center gap-x-2 py-2 px-4 bg-red-300 rounded-[25px] mb-3" href="#">
                     <button>
@@ -21,6 +22,7 @@ const Footer = () => {
                 <a className="font-bold" href="">Freight</a>
                 <a className="font-bold" href="">Services</a>
             </ul>
+            </div>
             <div className="flex items-start flex-col">
             <span className="flex items-center gap-x-2">
                 <img src="" className="w-5 h-5" alt="" />
@@ -53,15 +55,6 @@ const Footer = () => {
                 </li>
             </ul>
             </div>
-            </div>
-        </div>
-        <div className="bg-slate-950 py-2">
-        <div className="myContainer flex items-center justify-between  text-white">
-                <p>2023 "Sapphire Logistics" barcha huquqlar himoyalangan</p>
-                <span className="flex items-center gap-x-1">
-                    <p>Creators by </p>
-                    <a href="https:t.me/NTFGroups">NTF Groups</a>
-                </span>
             </div>
         </div>
     </div>

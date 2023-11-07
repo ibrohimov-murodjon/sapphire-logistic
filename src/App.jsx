@@ -5,18 +5,18 @@ function App() {
 
   return (
     <>
-      <Visitka/>
-      <Navbar/>
-      <Hero/>
-      <Stronger/>
-      <About/>
-      <FreightServices/>
-      <Sender/>
-      <Proces/>
-      <Team/>
+      {/* <Visitka/> */}
+      {/* <Navbar/> */}
+      {/* <Hero/> */}
+      {/* <Stronger/> */}
+      {/* <About/> */}
+      {/* <FreightServices/> */}
+      {/* <Sender/> */}
+      {/* <Proces/> */}
+      {/* <Team/> */}
       <FAQs/>
-      <Contact/>
-      <Footer/>
+      {/* <Contact/> */}
+      {/* <Footer/> */}
     </>
   );
 }
