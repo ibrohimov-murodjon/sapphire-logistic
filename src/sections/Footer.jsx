@@ -2,7 +2,7 @@ import { facebook, Instagram, Twitter, YouTube } from "../assets"
 
 const Footer = () => {
   return (
-    <div className="pt-10">
+    <div className="pt-10 bg-[#3e4095]">
         <div className="myContainer pb-2">
             <div className="flex items-start justify-between">
             <div className="flex items-start flex-col">
