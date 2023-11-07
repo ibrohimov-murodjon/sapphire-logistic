@@ -10,13 +10,13 @@ const faqData = [
 const FAQs = () => {
   return (
     <div className="lightBlue py-24">
-      <div className="myContainer mx-auto flex items-start justify-around">
+      <div className="myContainer mx-auto flex items-start justify-around maxSm:flex-col maxSm:gap-y-6 maxSm:items-center">
         <div className="flex flex-col">
-          <h2 className="text-[40px] text-black w-full max-w-[400px] mb-3">
+          <h2 className="text-[40px] text-black w-full max-w-[400px] mb-3 maxSm:text-center maxSm:max-w-[600px]">
             What mostly people ask us about
           </h2>
-          <small className="FAQs h-[200px] w-[300px] rounded-lg flex items-start justify-center flex-col pl-8 ] ">
-            <h5 className=" font-bold text-[18px] mb-2">
+          <small className="FAQs h-[200px] w-full max-w-[300px] rounded-lg flex items-start justify-center flex-col pl-8 ] maxSm:max-w-[600px] maxSm:h-[300px] maxSm:text-center maxSm:items-center">
+            <h5 className=" font-bold text-[18px] mb-2 maxSm:text-[30px]">
               Have more questions?
             </h5>
             <p className="text-[14px] mb-2">
