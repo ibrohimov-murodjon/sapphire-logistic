@@ -69,12 +69,6 @@ const Stronger = () => {
               className="w-[500px] rounded-[5px] h-[300px]"
               alt=""
             />
-            <span className="flex items-center justify-center border-dashed border-[2px] w-full max-w-[350px] bg-slate-700 border-blue-200 text-center gap-x-1 p-2 rounded-bl-[25px] rounded-tr-[25px] absolute bottom-[-40px] left-[50%] translate-x-[-50%]">
-              <p className="text-[60px] text-[#ED3237]">25+</p>
-              <p className="text-[30px] capitalize text-white leading-8">
-                years of experience
-              </p>
-            </span>
           </div>
           <div className="skill-main mt-20">
             <div className="skill-bar mt-4">

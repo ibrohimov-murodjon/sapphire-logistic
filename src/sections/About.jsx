@@ -56,7 +56,7 @@ const About = () => {
             Sapphire Truckload service delivers the knowledge and opportunity to
             optimize every mile on every lane.
           </p>
-          <ul className="flex items-center gap-x-[30px] mt-14 flex-wrap">
+          {/* <ul className="flex items-center gap-x-[30px] mt-14 flex-wrap">
             <li>
               <h2 className="text-[80px] font-bold ">50k</h2>
               <hr className="bg-black border-[black]" />
@@ -78,7 +78,7 @@ const About = () => {
                 Customers successfully served{" "}
               </p>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
       <div className="marquee mt-5">
