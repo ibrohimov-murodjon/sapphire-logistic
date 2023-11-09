@@ -40,7 +40,7 @@ export default function Hero() {
             <Button title="Get Started" textClr="white" bgColor="#3E4095" />
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide className="slider2 ">
+        <SwiperSlide className="slider2 ">
           <div className="flex myContainer flex-col w-full ">
             <span className=" border-[3px] mb-2  border-[orange] bg-gray-300 px-5 w-full max-w-[250px] text-center py-1 rounded-3xl text-[10px] text-orange-400 font-bold uppercase">
               Welcome to sapphire logistic
@@ -74,7 +74,7 @@ export default function Hero() {
             </p>
             <Button title="Get Started" bgColor="yellow" />
           </div>
-        </SwiperSlide> */}
+        </SwiperSlide>
       </Swiper>
     </>
   );
