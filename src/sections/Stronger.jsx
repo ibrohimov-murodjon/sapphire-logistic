@@ -4,10 +4,10 @@ import StackImg from "../assets/stack-img.png";
 const Stronger = () => {
   return (
     <div className="advantages" id="about">
-      <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-start justify-between pt-20 pb-16">
+      <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-start justify-between pt-20 pb-16 gap-12 tabletMax:flex-col tabletMax:items-center">
         <div className="flex flex-col ">
-          <p className="uppercase mb-2 text-white">Why choose sapphire</p>
-          <h1 className="text-[40px] text-white font-bold w-full max-w-[450px] leading-normal mb-6">
+          <p className="uppercase mb-2 text-white mobileLg:text-[17px]">Why choose sapphire</p>
+          <h1 className="text-[40px] text-white font-bold w-full max-w-[450px] leading-normal mb-6 mobileLg:text-[35px] mobileMd:text-center">
             Well keep your items damage free
           </h1>
           <ul />
@@ -15,11 +15,11 @@ const Stronger = () => {
             <li className="flex items-start gap-x-5">
               <img
                 src={Money}
-                className="w-14 h-14 p-3 bg-[#ED3237] rounded-full"
+                className="w-14 h-14 p-3 bg-[#ED3237] rounded-full mobileLg:w-12 mobileLg:h-12"
                 alt=""
               />
               <span>
-                <h3 className="text-[25px] font-bold capitalize text-white">
+                <h3 className="text-[25px] font-bold capitalize text-white mobileLg:text-[22px]">
                   cost-effective operation
                 </h3>
                 <p className="w-full max-w-[450px] text-gray-400">
@@ -31,11 +31,11 @@ const Stronger = () => {
             <li className="flex items-start gap-x-5">
               <img
                 src={Truck}
-                className="w-14 h-14 p-3 bg-[#ED3237] rounded-full"
+                className="w-14 h-14 p-3 bg-[#ED3237] rounded-full mobileLg:w-12 mobileLg:h-12"
                 alt=""
               />
               <span>
-                <h3 className="text-[25px] font-bold capitalize text-white">
+                <h3 className="text-[25px] font-bold capitalize text-white mobileLg:text-[22px]">
                   cost-effective operation
                 </h3>
                 <p className="w-full max-w-[450px] text-gray-400">
@@ -47,11 +47,11 @@ const Stronger = () => {
             <li className="flex items-start gap-x-5">
               <img
                 src={Box}
-                className="w-14 h-14 p-3 bg-[#ED3237] rounded-full"
+                className="w-14 h-14 p-3 bg-[#ED3237] rounded-full mobileLg:w-12 mobileLg:h-12"
                 alt=""
               />
               <span>
-                <h3 className="text-[25px] font-bold capitalize text-white">
+                <h3 className="text-[25px] font-bold capitalize text-white mobileLg:text-[22px]">
                   cost-effective operation
                 </h3>
                 <p className="w-full max-w-[450px] text-gray-400">
@@ -66,7 +66,7 @@ const Stronger = () => {
           <div className="relative">
             <img
               src={StackImg}
-              className="w-[500px] rounded-[5px] h-[300px]"
+              className="w-[500px] rounded-[5px] h-[300px] mobileLg:h-[250px]"
               alt=""
             />
           </div>
