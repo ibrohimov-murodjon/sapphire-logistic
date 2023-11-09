@@ -31,28 +31,28 @@ const AboutData = [
 
 const About = () => {
   return (
-    <div className="about pt-20 pb-11  relative h-[600px]">
-      <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-start justify-around">
-        <div className="flex items-center flex-col">
+    <div className="about pt-20 pb-11  relative h-[600px] mobileMax:h-fit">
+      <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-start justify-around gap-x-10 mobileMax:flex-col mobileLg:items-center">
+        <div className="flex items-center flex-col mobileMax:flex-row mobileMax:justify-between mobileMax:gap-x-12 mobileMax:mb-12 mobileLg:flex-col-reverse mobileLg:items-center">
           <img
             src=""
             className="w-[300px] h-[200px] border"
             alt="about Truck"
           />
-          <span className="flex items-start flex-col mt-6">
-            <h3 className="font-bold text-[30px]">Discover Sapphire</h3>
-            <p className="text-[17px] font-semibold w-full max-w-[220px]">
+          <span className="flex items-start flex-col mt-6 mobileLg:items-center">
+            <h3 className="font-bold text-[30px] mobileMax:text-[24px] mobileMax:text-center mobileLg:text-center mobileLg:text-3xl mobileLg:mb-2">Discover Sapphire</h3>
+            <p className="text-[17px] font-semibold w-full max-w-[220px] mobileMax:text-[13px] mobileLg:max-w-[300px] mobileLg:mb-4 mobileLg:text-center">
               24/7 customer and expert advice from dedicated transportation
               managers & team
             </p>
           </span>
         </div>
-        <div className="flex items-start flex-col">
-          <h1 className="text-[40px] font-bold w-full max-w-[730px] leading-[50px]">
+        <div className="flex items-start flex-col mobileMax:items-center mobileMax:text-center mobileMax:mb-4">
+          <h1 className="text-[40px] font-bold w-full max-w-[730px] leading-[50px] mobileMax:text-[35px] mobileLg:text-2xl">
             Whatever your logistic needs, We are ready to meet your
             requirements.
           </h1>
-          <p className="text-[17px] w-full max-w-[550px]">
+          <p className="text-[17px] w-full max-w-[550px] mobileLg:text-base">
             Sapphire Truckload service delivers the knowledge and opportunity to
             optimize every mile on every lane.
           </p>

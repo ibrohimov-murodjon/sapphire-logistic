@@ -253,6 +253,12 @@ nav {
     width: 75%;
   }
 }
+/* responsible */
+@media  (max-width: 450px) {
+  .skill-bar .bar{
+    height: 0.8rem;
+  }
+}
 
 /* About */
 .about {
