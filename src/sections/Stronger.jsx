@@ -4,7 +4,7 @@ import StackImg from "../assets/stack-img.png";
 const Stronger = () => {
   return (
     <div className="advantages" id="about">
-      <div className="myContainer mx-auto flex items-start justify-between pt-20 pb-16">
+      <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-start justify-between pt-20 pb-16">
         <div className="flex flex-col ">
           <p className="uppercase mb-2 text-white">Why choose sapphire</p>
           <h1 className="text-[40px] text-white font-bold w-full max-w-[450px] leading-normal mb-6">

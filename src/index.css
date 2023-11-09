@@ -360,6 +360,20 @@ nav {
   left: calc(0px - var(--v-progress-left) - var(--v-progress-border) / 2);
   top: calc(0px - var(--v-progress-border) + var(--v-progress-border) / 2);
 }
+@media (max-width: 495px) {
+  .v-progress-item:before{
+    display: none;
+  }
+  .v-progress-item::after{
+    display: none;
+  }
+  .v-progress-item{
+    margin-left: 0;
+  }
+  .v-progress-item img{
+    margin-left: 0;
+  }
+}
 
 /* Marquee */
 .marquee {

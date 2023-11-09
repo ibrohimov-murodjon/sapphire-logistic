@@ -31,11 +31,11 @@ const processData = [
 ];
 const Process = () => {
   return (
-    <section className="w-full lightBlue py-[120px]">
-      <div className="myContainer mx-auto flex items-center justify-between">
-        <div>
-          <h2 className="text-[42px] font-bold text-black">How does it work</h2>
-          <p className="text-black text-base w-full max-w-[450px] pt-4 pb-12">
+    <section className="w-full lightBlue py-[120px] mobileMax:py-[80px]">
+      <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-center justify-between maxSm:flex-col maxSm:gap-16">
+        <div className="maxSm:flex maxSm:items-center maxSm:justify-center maxSm:flex-col">
+          <h2 className="text-[42px] font-bold text-black mobileMax:text-center">How does it work</h2>
+          <p className="text-black text-base w-full max-w-[450px] pt-4 pb-12 mobileMax:text-center">
             We know that organizing an efficient freight shipping in a limited
             time frame may challenge enough. So, we undertake this task from
             start to finish: planning the most suitable route, selecting the
@@ -60,7 +60,7 @@ const Process = () => {
             <ul>
               {processData.map((item) => (
                 <li
-                  class="v-progress-item completed flex items-center"
+                  className="v-progress-item completed flex items-center"
                   key={item.id}
                 >
                   <img
@@ -68,7 +68,7 @@ const Process = () => {
                     alt=""
                     className="w-[64px] h-[64px] mr-8 ml-16"
                   />
-                  <h3 className="text-lg text-black font-medium w-full max-w-[350px]">
+                  <h3 className="text-lg text-black font-medium w-full max-w-[350px] mobileLg:text-base ">
                     {item.text}
                   </h3>
                 </li>
