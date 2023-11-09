@@ -32,7 +32,7 @@ const processData = [
 const Process = () => {
   return (
     <section className="w-full lightBlue py-[120px]">
-      <div className="myContainer flex items-center justify-between">
+      <div className="myContainer mx-auto flex items-center justify-between">
         <div>
           <h2 className="text-[42px] font-bold text-black">How does it work</h2>
           <p className="text-black text-base w-full max-w-[450px] pt-4 pb-12">

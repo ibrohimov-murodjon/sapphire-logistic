@@ -32,7 +32,7 @@ const AboutData = [
 const About = () => {
   return (
     <div className="about pt-20 pb-11  relative h-[600px]">
-      <div className="myContainer flex items-start justify-around">
+      <div className="myContainer mx-auto flex items-start justify-around">
         <div className="flex items-center flex-col">
           <img
             src=""

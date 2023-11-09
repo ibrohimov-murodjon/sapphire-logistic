@@ -3,20 +3,20 @@ import Button from "./Button";
 
 const navLinks = [
   {
-    name: "Home",
-    to: "",
-  },
-  {
     name: "About",
     to: "about",
   },
   {
-    name: "Advantages",
-    to: "advantages",
+    name: "Services",
+    to: "services",
   },
   {
-    name: "Our Team",
-    to: "team",
+    name: "Truck Types",
+    to: "truckTypes",
+  },
+  {
+    name: "FAQ",
+    to: "faq",
   },
   {
     name: "Contact",

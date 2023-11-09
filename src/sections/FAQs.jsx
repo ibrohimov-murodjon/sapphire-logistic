@@ -1,15 +1,34 @@
-import { Button, FaqQuestions } from "../components"
-
+import { Button, FaqQuestions } from "../components";
 
 const faqData = [
-    {id:1, question:'What is the per LBS weight cost of goods transportation?',responce: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi similique qui cumque aliquam.'},
-    {id:2, question:'What is the per LBS weight cost of goods transportation?',responce: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi similique qui cumque aliquam.'},
-    {id:3, question:'What is the per LBS weight cost of goods transportation?',responce: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi similique qui cumque aliquam.'},
-    {id:4, question:'What is the per LBS weight cost of goods transportation?',responce: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi similique qui cumque aliquam.'}
-]
+  {
+    id: 1,
+    question: "What is the per LBS weight cost of goods transportation?",
+    responce:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi similique qui cumque aliquam.",
+  },
+  {
+    id: 2,
+    question: "What is the per LBS weight cost of goods transportation?",
+    responce:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi similique qui cumque aliquam.",
+  },
+  {
+    id: 3,
+    question: "What is the per LBS weight cost of goods transportation?",
+    responce:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi similique qui cumque aliquam.",
+  },
+  {
+    id: 4,
+    question: "What is the per LBS weight cost of goods transportation?",
+    responce:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi similique qui cumque aliquam.",
+  },
+];
 const FAQs = () => {
   return (
-    <div className="lightBlue py-24">
+    <div className="lightBlue py-24" id="faq">
       <div className="myContainer mx-auto flex items-start justify-around maxSm:flex-col maxSm:gap-y-6 maxSm:items-center">
         <div className="flex flex-col">
           <h2 className="text-[40px] text-black w-full max-w-[400px] mb-3 maxSm:text-center maxSm:max-w-[600px]">
@@ -42,6 +61,6 @@ const FAQs = () => {
       </div>
     </div>
   );
-}
+};
 
-export default FAQs
+export default FAQs;
