@@ -14,6 +14,10 @@ export default {
       colors: {
         bgVideo: "rgba(0,0,0,.6)",
       },
+      screens:{
+         desktopLg: { max: "1240px" },
+         desktopMd: { max: "1025px" },
+      }
     },
   },
   plugins: [],

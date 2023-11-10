@@ -11,7 +11,7 @@ import {
 const Visitka = () => {
   return (
     <div className="team h-[80px] flex items-center">
-      <div className="myContainer mx-auto flex items-center justify-between">
+      <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-center justify-between">
         <span className="flex items-center gap-x-1">
           <img src={Clock} className="w-5 h-5" alt="" />
           <small className="flex items-center">
