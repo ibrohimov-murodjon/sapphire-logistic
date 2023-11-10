@@ -7,7 +7,7 @@ const FaqQuestions = ({ response, question }) => {
     setInfo(!info);
   };
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full ">
       <div className="flex items-center w-full max-w-[650px] gap-x-5 team p-3">
         <h1 className="font-bold text-white">{question}</h1>
         <span
