@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { CallOperator, logo } from "../assets";
 import Button from "./Button";
 
@@ -25,10 +26,64 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const [active, setActive] = useState("Home");
+  const [toggle, setToggle] = useState(false);
+
+  const handleMenu = (name) => {
+    setActive(name);
+    setToggle(false);
+  };
+
+  const burgerMenuRef = useRef(null);
+
+  useEffect(() => {
+    const closeMenuOnScroll = () => {
+      if (toggle) {
+        setToggle(false);
+      }
+    };
+
+    const closeMenuOnTouch = (e) => {
+      if (
+        toggle &&
+        burgerMenuRef.current &&
+        !burgerMenuRef.current.contains(e.target)
+      ) {
+        setToggle(false);
+      }
+    };
+
+    const closeMenuOnClickOutside = (e) => {
+      if (
+        toggle &&
+        burgerMenuRef.current &&
+        !burgerMenuRef.current.contains(e.target)
+      ) {
+        setToggle(false);
+      }
+    };
+
+    if (toggle) {
+      document.addEventListener("scroll", closeMenuOnScroll);
+      document.addEventListener("touchstart", closeMenuOnTouch);
+      document.addEventListener("click", closeMenuOnClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("scroll", closeMenuOnScroll);
+      document.removeEventListener("touchstart", closeMenuOnTouch);
+      document.removeEventListener("click", closeMenuOnClickOutside);
+    };
+  }, [toggle]);
+
+  const handleBurgerClick = (e) => {
+    e.stopPropagation(); // Prevent the click event from propagating to the document
+    setToggle(!toggle);
+  };
   return (
     <nav className="sticky-header relative shadow-2xl bg-black bg-opacity-30 backdrop-filter backdrop-blur-md pt-3 tabletLgMd:pt-0">
-      <div className="myContainer  mx-auto flex items-center justify-between pt-3">
-        <a href="#" className="w-full">
+      <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-center justify-between pt-3">
+        <a href="#" className="w-full desktopLg:w-[50%]">
           <img src={logo} className="w-30 h-10" alt="" />
         </a>
         <div className=" w-full flex space-x-6 ml-[-80px] items-center">

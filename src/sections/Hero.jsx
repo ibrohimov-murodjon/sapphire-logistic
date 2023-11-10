@@ -25,7 +25,7 @@ export default function Hero() {
         className="mySwiper"
       >
         <SwiperSlide className="slider1 hero-swiper">
-          <div className="flex mx-auto max-w-[1246px] px-[20px] flex-col w-full ">
+          <div className="flex mx-auto w-full max-w-[1246px] px-[20px] flex-col">
             <span className=" border-[1px] mb-2  border-[#ED3237] bg-transparent px-5 w-full max-w-[280px] text-center py-1 rounded-3xl text-[10px] text-[#fff] font-bold uppercase">
               Welcome to sapphire transportation
             </span>
