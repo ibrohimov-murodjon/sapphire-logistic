@@ -71,7 +71,7 @@ const TruckTypes = () => {
     <div className="bg-[#3e4095]" id="truckTypes">
       <h1 className="text-center text-5xl font-bold py-12">Truck Types</h1>
       <div className="myContainer mx-auto pb-28">
-        <div className="relative flex max-w-[80%] lightBlue shadow-lg rounded-t-lg mx-auto mt-4">
+        <div className="relative flex max-w-[80%] lightBlue shadow-lg rounded-t-lg mx-auto mt-4 mobileLg:flex-col mobileLg:items-center mobileLg:h-fit">
           <div className="w-[60%]">
             {name === 1 ? (
               <Calculation setName={setName} name={name} data={footerData[0]} />
@@ -85,14 +85,15 @@ const TruckTypes = () => {
               ""
             )}
           </div>
-          <div className="bg-[#5D3E85] w-[40%] pb-8 flex flex-col items-center rounded-tr-lg">
-            <div class="relative float-label-input pt-[40px]">
+          <div className="bg-[#5D3E85] w-[40%] pb-8 flex flex-col items-center rounded-tr-lg mobileLg:w-full mobileLg:h-[400px] mobileLg:rounded-none mobileLg:pt-0">
+            <div class="relative float-label-input pt-[40px] mobileLg:mt-0 ">
               <input
                 type="text"
                 id="name"
                 maxLength={7}
                 placeholder=" "
-                class={`w-[240px] bg-white text-[#242525] focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-4 px-3 block appearance-none leading-normal focus:border-blue-400 ${
+                class={`w-[240px] bg-white text-[#242525] focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-4 px-3 block appearance-none leading-normal  maxSm:max-w-[200px]  mobileMax:max-w-[170px] mobileMax:py-3 
+               focus:border-blue-400 ${
                   name === 4 ? "hidden" : ""
                 }`}
                 onChange={(e) => handlePrice(e)}
@@ -113,11 +114,11 @@ const TruckTypes = () => {
               )}
             </div>
             <div className="lightBlue h-[1px] w-full mt-4"></div>
-            <div className="pt-[28px]">
+            <div className="pt-[28px] desktopMin:flex desktopMin:items-center desktopMin:justify-center desktopMin:flex-col desktopMin:pl-4">
               <span className={`${name === 4 ? "hidden" : ""}`}>
                 Total Payment
               </span>
-              <h1 className="text-5xl font-bold pt-[28px] max-w-[300px] leading-tight w-full">
+              <h1 className="text-5xl font-bold pt-[28px] max-w-[300px] leading-tight w-full desktopMin:text-4xl mobileMax:text-2xl">
                 {name === 1
                   ? `$ ${(footerData[0].fromPrice * Number(price)).toFixed(
                       2
@@ -139,7 +140,7 @@ const TruckTypes = () => {
             </div>
           </div>
         </div>
-        <ul className="flex items-center justify-center gap-x-3 max-w-[80%] mx-auto bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-bl-lg rounded-br-lg">
+        <ul className="flex items-center flex-wrap justify-center gap-x-3 max-w-[80%] mx-auto bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-bl-lg rounded-br-lg desktopMin:hidden">
           {footerData.map((e) => {
             const { id, name, img, link, fromPrice, toPrice } = e;
             return (
