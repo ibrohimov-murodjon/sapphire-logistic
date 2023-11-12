@@ -23,37 +23,37 @@ const changeTransport = [
     id: 1,
     title: "Get Secured Sapphire Air Freight Experience",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima blanditiis minus earum fugit distinctio totam nulla neque cupiditate, aut unde officia sed maxime nemo sint dolores",
-    advantage: [
-      { id: 1, title: "Intermodal Shipping" },
-      { id: 2, title: "Intermodal Shipping" },
-      { id: 3, title: "Intermodal Shipping" },
-      { id: 4, title: "Intermodal Shipping" },
-      { id: 5, title: "Intermodal Shipping" },
-      { id: 6, title: "Intermodal Shipping" },
-    ],
+    // advantage: [
+    //   { id: 1, title: "Intermodal Shipping" },
+    //   { id: 2, title: "Intermodal Shipping" },
+    //   { id: 3, title: "Intermodal Shipping" },
+    //   { id: 4, title: "Intermodal Shipping" },
+    //   { id: 5, title: "Intermodal Shipping" },
+    //   { id: 6, title: "Intermodal Shipping" },
+    // ],
     img: AirplaneSectionImg,
   },
   {
     id: 2,
     title: "Get Secured Sapphire poyezd Freight Experience",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima blanditiis minus earum fugit distinctio totam nulla neque cupiditate, aut unde officia sed maxime nemo sint dolores",
-    advantage: [
-      { id: 1, title: "Intermodal Shipping" },
-      { id: 2, title: "Intermodal Shipping" },
-      { id: 3, title: "Intermodal Shipping" },
-      { id: 4, title: "Intermodal Shipping" },
-      { id: 5, title: "Intermodal Shipping" },
-      { id: 6, title: "Intermodal Shipping" },
-    ],
+    // advantage: [
+    //   { id: 1, title: "Intermodal Shipping" },
+    //   { id: 2, title: "Intermodal Shipping" },
+    //   { id: 3, title: "Intermodal Shipping" },
+    //   { id: 4, title: "Intermodal Shipping" },
+    //   { id: 5, title: "Intermodal Shipping" },
+    //   { id: 6, title: "Intermodal Shipping" },
+    // ],
     img: LandTruck,
   },
 ];
 const FreightServices = () => {
   const [name, setName] = useState("airplane");
   return (
-    <div className="advantages py-12 pt-[200px]" id="services">
+    <div className="advantages py-12 pt-[200px] desktopMd:pt-[85px] mobileLg:pt-10 mobileMd:pb-1" id="services">
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex justify-center flex-col">
-        <h1 className="text-center text-[40px] font-bold mb-3">
+        <h1 className="text-center text-[40px] font-bold mb-3 mobileLg:text-[30px] mobileMd:text-[26px]">
           Freight Services
         </h1>
         <ul className="flex items-center justify-center gap-x-3">
@@ -63,10 +63,10 @@ const FreightServices = () => {
               <span
                 onClick={() => setName(link)}
                 key={id}
-                className={`flex items-center flex-col w-full max-w-[150px] bg-white bg-opacity-30 backdrop-filter backdrop-blur-md py-3`}
+                className={`flex items-center flex-col w-full max-w-[150px] bg-white bg-opacity-30 backdrop-filter backdrop-blur-md py-3 mobileMax:py-1`}
               >
-                <img src={img} className="w-10 h-10" />
-                <p>{name}</p>
+                <img src={img} className="w-10 h-10 tabletMax:w-8 tabletMax:h-8 mobileMax:w-6 mobileMax:h-6 mobileLg:w-6 mobileLg:h-6" />
+                <p className="tabletMax:text-xs mobileMax:text-[11px] mobileLg:hidden">{name}</p>
               </span>
             );
           })}

@@ -85,7 +85,7 @@ const TruckTypes = () => {
               ""
             )}
           </div>
-          <div className="bg-[#5D3E85] w-[40%] pb-8 flex flex-col items-center rounded-tr-lg mobileLg:w-full mobileLg:h-[400px] mobileLg:rounded-none mobileLg:pt-0">
+          <div className="group-[1]: bg-[#5D3E85] w-[40%] pb-8 flex flex-col items-center rounded-tr-lg mobileLg:w-full mobileLg:h-[330px] mobileLg:rounded-none mobileLg:pt-0">
             <div class="relative float-label-input pt-[40px] mobileLg:mt-0 ">
               <input
                 type="text"
@@ -118,7 +118,7 @@ const TruckTypes = () => {
               <span className={`${name === 4 ? "hidden" : ""}`}>
                 Total Payment
               </span>
-              <h1 className="text-5xl font-bold pt-[28px] max-w-[300px] leading-tight w-full desktopMin:text-4xl mobileMax:text-2xl">
+              <h1 className="text-5xl font-bold pt-[28px] max-w-[300px] leading-tight w-full desktopMin:text-4xl mobileMax:text-2xl mobileLg:text-center">
                 {name === 1
                   ? `$ ${(footerData[0].fromPrice * Number(price)).toFixed(
                       2
