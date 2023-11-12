@@ -17,7 +17,7 @@ export default {
       screens: {
         desktopLg: { max: "1240px" },
         desktop: { max: "1161px" },
-        desktopMd: { max: "1120px" },
+        desktopMd: { max: "1025px" },
         tabletLgMax: { max: "987px" },
         tabletLgMd: { max: "950px" },
         tabletLg: { max: "940px" },

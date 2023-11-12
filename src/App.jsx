@@ -18,15 +18,15 @@ function App() {
       {/* <Visitka /> */}
       {/* <Navbar /> */}
       {/* <Hero /> */}
-      <Stronger />
-      <About />
-      {/* <FreightServices /> */}
-      <Sender />
-      <Proces />
-      <TruckTypes />
-      <FAQs />
-      <Contact />
-      <Footer />
+      {/* <Stronger /> */}
+      {/* <About /> */}
+      <FreightServices />
+      {/* <Sender /> */}
+      {/* <Proces /> */}
+      {/* <TruckTypes /> */}
+      {/* <FAQs /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </>
   );
 }
