@@ -15,18 +15,18 @@ import {
 function App() {
   return (
     <>
-      {/* <Visitka /> */}
-      {/* <Navbar /> */}
-      {/* <Hero /> */}
-      {/* <Stronger /> */}
-      {/* <About /> */}
+      <Visitka />
+      <Navbar />
+      <Hero />
+      <Stronger />
+      <About />
       <FreightServices />
-      {/* <Sender /> */}
-      {/* <Proces /> */}
-      {/* <TruckTypes /> */}
-      {/* <FAQs /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Sender />
+      <Proces />
+      <TruckTypes />
+      <FAQs />
+      <Contact />
+      <Footer />
     </>
   );
 }

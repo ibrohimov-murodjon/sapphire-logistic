@@ -184,6 +184,54 @@ nav {
   z-index: 998;
   -webkit-backface-visibility: hidden;
 }
+
+/* Sidebar */
+.btn-primary {
+    border-color: #5a8dee !important;
+    background-color: #5a8dee !important;
+    color: #fff;
+}
+.sidebar{
+    width: 280px;
+    min-height: 100vh;
+    box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
+    background:#3e4095;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1;
+    transition: 0.5s;
+}
+.sidebar.active{
+    left: 0;
+}
+.sd-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.sidebar-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+}
+.sidebar-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+.sd-body{
+    max-height: calc(100vh - 67px);
+    overflow-x: hidden;
+}
+
 /* Animtion */
 .skill-main .skill-bar .info {
   display: flex;
