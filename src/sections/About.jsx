@@ -31,7 +31,7 @@ const AboutData = [
 
 const About = () => {
   return (
-    <div className="about pt-20 pb-11  relative h-[600px] mobileMax:h-fit">
+    <div className="about pt-20 pb-11  relative h-[700px] mobileMax:h-fit">
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-start justify-around gap-x-10 mobileMax:flex-col mobileLg:items-center">
         <div className="flex items-center flex-col mobileMax:flex-row mobileMax:justify-between mobileMax:gap-x-12 mobileMax:mb-12 mobileLg:flex-col-reverse mobileLg:items-center">
           <img

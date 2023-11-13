@@ -18,7 +18,7 @@ function App() {
       <Visitka />
       <Navbar />
       <Hero />
-       <Stronger />
+      <Stronger />
       <About />
       <FreightServices />
       <Sender />
