@@ -21,7 +21,7 @@ const Visitka = () => {
             </p>
           </small>
         </span>
-        <div className="flex items-center gap-x-16">
+        <div className="flex items-center gap-x-16 tabletLgMd:flex-col tabletLgMax:gap-y-2">
           <span className="flex items-center gap-x-1">
             <img src={Location} className="w-5 h-5" alt="" />
             <small className="flex items-center gap-x-2">

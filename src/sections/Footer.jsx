@@ -23,17 +23,17 @@ const Footer = () => {
           </div>
           <ul className="flex items-start flex-col tabletMax:hidden">
             <h4 className="font-bold text-[20px]">Menu</h4>
-            <a className="font-bold" href="">
+            <a className="font-bold" href="#about">
               About
             </a>
-            <a className="font-bold" href="">
-              Hero
-            </a>
-            <a className="font-bold" href="">
-              Freight
-            </a>
-            <a className="font-bold" href="">
+            <a className="font-bold" href="#services">
               Services
+            </a>
+            <a className="font-bold" href="#truck">
+              Truck
+            </a>
+            <a className="font-bold" href="#faq">
+              FAQ
             </a>
           </ul>
           <div className="flex items-start flex-col mobileMax:items-center mobileMax:mb-8">
@@ -71,18 +71,20 @@ const Footer = () => {
           
         </div>
         <ul className="tabletMax:flex items-start justify-evenly mb-4 hidden  ">
-            <a className="font-bold uppercase" href="">
+            <a className="font-bold uppercase" href="#about">
               About
             </a>
-            <a className="font-bold uppercase" href="">
-              Hero
-            </a>
-            <a className="font-bold uppercase" href="">
-              Freight
-            </a>
-            <a className="font-bold uppercase" href="">
+            <a className="font-bold uppercase" href="#services">
               Services
             </a>
+            <a className="font-bold uppercase" href="#truckTypes">
+              Truck
+            </a>
+            <a className="font-bold uppercase" href="#faq">
+              FAQ
+            </a>
+            
+            
           </ul>
       </div>
       {/* <div className="bg-slate-950 py-2">

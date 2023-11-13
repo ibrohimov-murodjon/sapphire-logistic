@@ -51,7 +51,7 @@ const changeTransport = [
 const FreightServices = () => {
   const [name, setName] = useState("airplane");
   return (
-    <div className="advantages py-48 " id="services">
+    <div className="advantages pt-48 pb-20 mobileMax:pb-10 " id="services">
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex justify-center flex-col">
         <h1 className="text-center text-[40px] font-bold mb-3 mobileLg:text-[30px] mobileMd:text-[26px]">
           Freight Services
