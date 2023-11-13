@@ -12,7 +12,7 @@ export default function Hero() {
         direction={"vertical"}
         slidesPerView={1}
         spaceBetween={30}
-        mousewheel={true}
+        mousewheel={false}
         effect={"fade"}
         autoplay={{
           delay: 2500,

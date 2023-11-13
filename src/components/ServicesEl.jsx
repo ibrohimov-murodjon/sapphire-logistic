@@ -7,7 +7,7 @@ const ServicesEl = ({ data }) => {
       <span className=" rounded-[25px] mobileMax:mb-2">
       <img src={data.img} className="w-[480px] h-[370px] mobileMax:w-[500px] mobileMax:h-[300px] mobileLg:h-[280px] mobileMd:h-[210px]" />
       </span>
-      <span className="w-full max-w-[10px] bg-white h-[800px] mobileMax:hidden"></span>
+      <span className="w-full max-w-[1px] bg-white h-[800px] mobileMax:hidden"></span>
       <span>
         <p className="uppercase mobileMax:text-center">Explore Sapphire Features</p>
         <h3 className="font-bold text-[35px]  w-full max-w-[450px] mb-3 leading-10 maxSm:text-[30px] mobileMax:text-center">
