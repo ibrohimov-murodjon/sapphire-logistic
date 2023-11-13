@@ -1,10 +1,6 @@
 import { useState } from "react";
-import { Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 import {
-  DoneIcon,
   SemiTruck,
-  ArrowIcon,
   SmallTruck,
   LargeTruck,
   SprinterVan,
@@ -140,7 +136,7 @@ const TruckTypes = () => {
             </div>
           </div>
         </div>
-        <ul className="flex items-center flex-wrap justify-center gap-x-3 max-w-[80%] mx-auto bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-bl-lg rounded-br-lg desktopMin:hidden">
+        <ul className="flex items-center desktopMid:flex-wrap justify-center gap-x-3 max-w-[80%] mx-auto bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-bl-lg rounded-br-lg desktopMin:hidden">
           {footerData.map((e) => {
             const { id, name, img, link, fromPrice, toPrice } = e;
             return (
