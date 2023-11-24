@@ -29,24 +29,6 @@ const Visitka = () => {
               <p className="font-bold text-[14px]"> New York</p>
             </small>
           </span>
-          <ul className="flex items-center gap-x-3">
-            <li className="uppercase text-white">Reach us:</li>
-            <a href="https://facebook.com">
-              <img src={facebook} className="w-5 h-5" alt="" />
-            </a>
-            <a href="https://instagram.com">
-              <img src={Instagram} className="w-5 h-5" alt="" />
-            </a>
-            <a href="https://linkedin.com">
-              <img src={Linkedin} className="w-5 h-5" alt="" />
-            </a>
-            <a href="https://twiter.com">
-              <img src={Twitter} className="w-5 h-5" alt="" />
-            </a>
-            <a href="https://youtube.com">
-              <img src={YouTube} className="w-5 h-5" alt="" />
-            </a>
-          </ul>
         </div>
       </div>
     </div>
