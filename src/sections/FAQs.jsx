@@ -28,7 +28,7 @@ const faqData = [
 ];
 const FAQs = () => {
   return (
-    <div className="lightBlue py-24" id="faq">
+    <div className="lightBlue  py-24" id="faq">
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-start justify-around maxSm:flex-col maxSm:gap-y-6 maxSm:items-center">
         <div className="flex flex-col">
           <h2 className="text-[40px] text-black w-full max-w-[400px] mb-3 maxSm:text-center maxSm:max-w-[600px]">

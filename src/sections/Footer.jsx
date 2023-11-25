@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="flex items-start flex-col mobileMax:justify-center mobileMax:items-center ">
             <a
               className="flex items-center gap-x-2 py-2 px-4 bg-red-300 rounded-[25px] mb-3"
-              href="#"
+              href=""
             >
               <button>Calculator go</button>
               <img src="" className="w-5 h-5" alt="" />
@@ -29,7 +29,7 @@ const Footer = () => {
             <a className="font-bold" href="#services">
               Services
             </a>
-            <a className="font-bold" href="#truck">
+            <a className="font-bold" href="#truckTypes">
               Truck
             </a>
             <a className="font-bold" href="#faq">
