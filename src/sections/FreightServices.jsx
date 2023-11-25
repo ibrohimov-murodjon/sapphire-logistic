@@ -1,22 +1,23 @@
 import { useState } from "react";
 import {
-  AirPlaneImg,
-  AirplaneSectionImg,
-  LandTruck,
-  ShipImg,
-  TrainImg,
-  TruckLogo,
+  crossBordering,
+  crossDock,
+  expedited,
+  FTL,
+  LTL,
   WareHousing,
+  AirplaneSectionImg,
+  LandTruck
 } from "../assets";
 import { ServicesEl } from "../components";
 
 const navbarData = [
-  { id: 1, name: "Air Freight", img: AirPlaneImg, link: "airplane" },
-  { id: 2, name: "Rail Freight", img: TrainImg, link: "train" },
-  { id: 3, name: "LTL Freight", img: TruckLogo, link: "ltl" },
-  { id: 4, name: "Sea Freight", img: ShipImg, link: "ship" },
-  { id: 5, name: "Land Freight", img: LandTruck, link: "land" },
-  { id: 6, name: "Warehousing", img: WareHousing, link: "warehouse" },
+  { id: 1, name: "FTL", img:FTL, link: "ftl" },
+  { id: 2, name: "LTL", img: LTL, link: "ltl" },
+  { id: 3, name: "EXPEDITED", img: expedited, link: "expedited" },
+  { id: 4, name: "WAREHOUSING", img: WareHousing, link: "warehousing" },
+  { id: 5, name: "CROSS DOCK", img: crossDock, link: "crossDock" },
+  { id: 6, name: "CROSS BORDERING", img: crossBordering, link: "crossBordering" },
 ];
 const changeTransport = [
   {
@@ -49,7 +50,7 @@ const changeTransport = [
   },
 ];
 const FreightServices = () => {
-  const [name, setName] = useState("airplane");
+  const [name, setName] = useState("ftl");
   return (
     <div className="advantages pt-48 pb-20 mobileMax:pb-10 " id="services">
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex justify-center flex-col">
@@ -65,17 +66,17 @@ const FreightServices = () => {
                 key={id}
                 className={`flex items-center flex-col w-full max-w-[150px] bg-white bg-opacity-30 backdrop-filter backdrop-blur-md py-3 mobileMax:py-1`}
               >
-                <img src={img} className="w-10 h-10 tabletMax:w-8 tabletMax:h-8 mobileMax:w-6 mobileMax:h-6 mobileLg:w-6 mobileLg:h-6" />
-                <p className="tabletMax:text-xs mobileMax:text-[11px] mobileLg:hidden">{name}</p>
+                <img src={img} className="w-14 bg-center h-14 tabletMax:w-8 tabletMax:h-8 mobileMax:w-6 mobileMax:h-6 mobileLg:w-6 mobileLg:h-6" />
+                <p className="tabletMax:text-xs text-center mobileMax:text-[11px] mobileLg:hidden">{name}</p>
               </span>
             );
           })}
         </ul>
         <hr className="mb-3" />
         {/* <ServicesEl/> */}
-        {name === "airplane" ? (
+        {name === "ftl" ? (
           <ServicesEl data={changeTransport[0]} />
-        ) : name === "train" ? (
+        ) : name === "ltl" ? (
           <ServicesEl data={changeTransport[1]} />
         ) : (
           ""
