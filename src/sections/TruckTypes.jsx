@@ -1,10 +1,5 @@
 import { useState } from "react";
-import {
-  SemiTruck,
-  SmallTruck,
-  LargeTruck,
-  SprinterVan,
-} from "../assets";
+import { SemiTruck, SmallTruck, LargeTruck, SprinterVan } from "../assets";
 import { Calculation } from "../components";
 
 const footerData = [
@@ -81,7 +76,8 @@ const TruckTypes = () => {
               ""
             )}
           </div>
-          <div className="group-[1]: bg-[#5D3E85] w-[40%] pb-8 flex flex-col items-center rounded-tr-lg mobileLg:w-full mobileLg:h-[330px] mobileLg:rounded-none mobileLg:pt-0">
+          <div className="bg-[#242525] h-auto w-[1px]"></div>
+          <div className="group-[1]:  w-[40%] pb-8 flex flex-col items-center rounded-tr-lg mobileLg:w-full mobileLg:h-[330px] mobileLg:rounded-none mobileLg:pt-0">
             <div class="relative float-label-input pt-[40px] mobileLg:mt-0 ">
               <input
                 type="text"
@@ -89,15 +85,13 @@ const TruckTypes = () => {
                 maxLength={7}
                 placeholder=" "
                 class={`w-[240px] bg-white text-[#242525] focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-4 px-3 block appearance-none leading-normal  maxSm:max-w-[200px]  mobileMax:max-w-[170px] mobileMax:py-3 
-               focus:border-blue-400 ${
-                  name === 4 ? "hidden" : ""
-                }`}
+               focus:border-blue-400 ${name === 4 ? "hidden" : ""}`}
                 onChange={(e) => handlePrice(e)}
                 value={price}
               />
               <label
                 for="name"
-                class={`absolute top-[55px] left-[5px] text-gray-400 pointer-events-none transition duration-200 ease-in-outbg-white px-2 text-grey-darker ${
+                class={`absolute top-[55px] left-[5px] text-[#242525] pointer-events-none transition duration-200 ease-in-outbg-white px-2 text-grey-darker ${
                   name === 4 ? "hidden" : ""
                 }`}
               >
@@ -109,12 +103,12 @@ const TruckTypes = () => {
                 </span>
               )}
             </div>
-            <div className="lightBlue h-[1px] w-full mt-4"></div>
+            <div className="bg-[#242525] h-[1px] w-full mt-4"></div>
             <div className="pt-[28px] desktopMin:flex desktopMin:items-center desktopMin:justify-center desktopMin:flex-col desktopMin:pl-4">
-              <span className={`${name === 4 ? "hidden" : ""}`}>
+              <span className={`${name === 4 ? "hidden" : "text-[#242525]"}`}>
                 Total Payment
               </span>
-              <h1 className="text-5xl font-bold pt-[28px] max-w-[300px] leading-tight w-full desktopMin:text-4xl mobileMax:text-2xl mobileLg:text-center">
+              <h1 className="text-5xl text-[#242525] font-bold pt-[28px] max-w-[300px] leading-tight w-full desktopMin:text-4xl mobileMax:text-2xl mobileLg:text-center">
                 {name === 1
                   ? `$ ${(footerData[0].fromPrice * Number(price)).toFixed(
                       2
