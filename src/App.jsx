@@ -8,11 +8,9 @@ import {
   FreightServices,
   Hero,
   Proces,
-  Sender,
   Stronger,
   TruckTypes,
 } from "./sections";
-import LoaderVid from './assets/loader/loader.mp4'
 
 function App() {
   const [page, setPage ] = useState(false)
@@ -48,7 +46,6 @@ function App() {
         <Stronger />
         <About />
         <FreightServices />
-        <Sender />
         <Proces />
         <TruckTypes />
         <FAQs />
