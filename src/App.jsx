@@ -7,7 +7,6 @@ import {
   FreightServices,
   Hero,
   Proces,
-  Sender,
   Stronger,
   TruckTypes,
 } from "./sections";
@@ -21,7 +20,6 @@ function App() {
       <Stronger />
       <About />
       <FreightServices />
-      <Sender />
       <Proces />
       <TruckTypes />
       <FAQs />

@@ -40,45 +40,25 @@ const About = () => {
             alt="about Truck"
           />
           <span className="flex items-start flex-col mt-6 mobileLg:items-center">
-            <h3 className="font-bold text-[30px] mobileMax:text-[24px] mobileMax:text-center mobileLg:text-center mobileLg:text-3xl mobileLg:mb-2">Discover Sapphire</h3>
-            <p className="text-[17px] font-semibold w-full max-w-[220px] mobileMax:text-[13px] mobileLg:max-w-[300px] mobileLg:mb-4 mobileLg:text-center">
-              24/7 customer and expert advice from dedicated transportation
-              managers & team
+            <h3 className="font-bold text-[30px] mobileMax:text-[24px] mobileMax:text-center mobileLg:text-center mobileLg:text-3xl mobileLg:mb-2">
+              Explore Sapphire:
+            </h3>
+            <p className="text-[17px] font-semibold w-full max-w-[260px] mobileMax:text-[13px] mobileLg:max-w-[300px] mobileLg:mb-4 mobileLg:text-center">
+              Access 24/7 guidance from dedicated transportation managers and
+              experts for personalized advice and support.
             </p>
           </span>
         </div>
         <div className="flex items-start flex-col mobileMax:items-center mobileMax:text-center mobileMax:mb-4">
           <h1 className="text-[40px] font-bold w-full max-w-[730px] leading-[50px] mobileMax:text-[35px] mobileLg:text-2xl">
-            Whatever your logistic needs, We are ready to meet your
-            requirements.
+            Sapphire Transportation: Effortless Logistics, Exceptional Service.
+            Your shipments, our commitment – delivering excellence,{" "}
+            <span className="underline underline-offset-4 ">every time.</span>
           </h1>
-          <p className="text-[17px] w-full max-w-[550px] mobileLg:text-base">
+          {/* <p className="text-[17px] w-full max-w-[550px] mobileLg:text-base">
             Sapphire Truckload service delivers the knowledge and opportunity to
             optimize every mile on every lane.
-          </p>
-          {/* <ul className="flex items-center gap-x-[30px] mt-14 flex-wrap">
-            <li>
-              <h2 className="text-[80px] font-bold ">50k</h2>
-              <hr className="bg-black border-[black]" />
-              <p className="text-[15px] font-semibold mt-1">
-                Customers successfully served{" "}
-              </p>
-            </li>
-            <li>
-              <h2 className="text-[80px] font-bold ">2M+</h2>
-              <hr className="bg-black border-[black]" />
-              <p className="text-[15px] font-semibold mt-1">
-                Customers successfully served{" "}
-              </p>
-            </li>
-            <li>
-              <h2 className="text-[80px] font-bold ">356</h2>
-              <hr className="bg-black border-[black]" />
-              <p className="text-[15px] font-semibold mt-1">
-                Customers successfully served{" "}
-              </p>
-            </li>
-          </ul> */}
+          </p> */}
         </div>
       </div>
       <div className="marquee mt-5">

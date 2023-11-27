@@ -12,6 +12,7 @@ import {
   HomeIcon,
 } from "../assets";
 import Button from "./Button";
+import NewLogo from '../assets/ST-logo-svg.svg'
 
 const navLinks = [
   {
@@ -88,7 +89,9 @@ const Navbar = () => {
                 </a>
               </span>
             </div>
-            <Button bgColor="#3E4095" title="Request a quote" hidden />
+            <a href="#contact">
+              <Button bgColor="#3E4095" title="Request a quote" hidden />
+            </a>
             <img
               src={burger}
               alt="menu"

@@ -1,106 +1,62 @@
 import { Box, Money, Truck } from "../assets";
 import StackImg from "../assets/stack-img.png";
 
+const data = [
+  {
+    img: Money,
+    title: "Rapid Deliveries Across USA & Canada",
+    desc: "Streamline your expedited truck shipment with Sapphire Transportation all over the USA and Canada to ensure your packages reach their destination in the shortest possible time. ",
+  },
+  {
+    img: Box,
+    title: "Fast and reliable delivery.",
+    desc: "Sapphire Transportation ensures fast and reliable delivery of your goods - we understand the importance of time sensitive shipments and prioritize efficiency.  Experience hassle-free expedited truck shipment. ",
+  },
+  {
+    img: Truck,
+    title: "Real-time tracking and updates.",
+    desc: "With Sapphire Transportation - track your shipments in real-time and receive regular updates on their status. Stay informed every step of the way. ",
+  },
+  {
+    img: Truck,
+    title: "Dedicated customer support",
+    desc: "Customer satisfaction is prioritized - customer support team is available 24/7 to assist you with any queries or concerns with regard to your expedited shipment.",
+  },
+];
+
 const Stronger = () => {
   return (
     <div className="advantages" id="about">
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-start justify-between pt-20 pb-16 gap-12 tabletMax:flex-col tabletMax:items-center">
         <div className="flex flex-col ">
-          <p className="uppercase mb-2 text-white mobileLg:text-[17px]">Why choose sapphire</p>
-          <h1 className="text-[40px] text-white font-bold w-full max-w-[450px] leading-normal mb-6 mobileLg:text-[35px] mobileMd:text-center">
-            Well keep your items damage free
+          <span className=" border-[1px] mb-2  border-[#fff] bg-transparent px-5 w-full max-w-[280px] text-center py-1 rounded-3xl text-[10px] text-[#fff] font-bold uppercase mobileLg:text-[17px]">
+            Why choose sapphire
+          </span>
+          <h1 className="text-[40px] text-white font-bold w-full max-w-[500px] leading-normal mb-6 mobileLg:text-[35px] mobileMd:text-center">
+            Transportation Services Like No Other
           </h1>
-          <ul />
-          <ul className="flex items-center flex-col gap-y-10">
-            <li className="flex items-start gap-x-5">
-              <img
-                src={Money}
-                className="w-14 h-14 p-3 bg-[#ED3237] rounded-full mobileLg:w-12 mobileLg:h-12"
-                alt=""
-              />
-              <span>
-                <h3 className="text-[25px] font-bold capitalize text-white mobileLg:text-[22px]">
-                  cost-effective operation
-                </h3>
-                <p className="w-full max-w-[450px] text-gray-400">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-                  culpa esse in suscipit eaque perferendis?
-                </p>
-              </span>
-            </li>
-            <li className="flex items-start gap-x-5">
-              <img
-                src={Truck}
-                className="w-14 h-14 p-3 bg-[#ED3237] rounded-full mobileLg:w-12 mobileLg:h-12"
-                alt=""
-              />
-              <span>
-                <h3 className="text-[25px] font-bold capitalize text-white mobileLg:text-[22px]">
-                  cost-effective operation
-                </h3>
-                <p className="w-full max-w-[450px] text-gray-400">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-                  culpa esse in suscipit eaque perferendis?
-                </p>
-              </span>
-            </li>
-            <li className="flex items-start gap-x-5">
-              <img
-                src={Box}
-                className="w-14 h-14 p-3 bg-[#ED3237] rounded-full mobileLg:w-12 mobileLg:h-12"
-                alt=""
-              />
-              <span>
-                <h3 className="text-[25px] font-bold capitalize text-white mobileLg:text-[22px]">
-                  cost-effective operation
-                </h3>
-                <p className="w-full max-w-[450px] text-gray-400">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-                  culpa esse in suscipit eaque perferendis?
-                </p>
-              </span>
-            </li>
+          <ul className="flex flex-wrap justify-between gap-y-12 mt-4 mx-6">
+            {data.map((item, index) => (
+              <li
+                className="flex items-start gap-x-5 max-w-[450px]"
+                key={index}
+              >
+                <img
+                  src={item.img}
+                  className="w-14 h-14 p-3 bg-[#ED3237] rounded-full mobileLg:w-12 mobileLg:h-12"
+                  alt=""
+                />
+                <span>
+                  <h3 className="text-[25px] font-bold capitalize text-white mobileLg:text-[22px]">
+                    {item.title}
+                  </h3>
+                  <p className="w-full max-w-[450px] pt-2 text-[#fff]">
+                    {item.desc}
+                  </p>
+                </span>
+              </li>
+            ))}
           </ul>
-        </div>
-        <div className="">
-          <div className="relative">
-            <img
-              src={StackImg}
-              className="w-[500px] rounded-[5px] h-[300px] mobileLg:h-[250px]"
-              alt=""
-            />
-          </div>
-          <div className="skill-main mt-20">
-            <div className="skill-bar mt-4">
-              <div className="info">
-                <p className="font-bold mb-2 text-white">Shipping by Road</p>
-                <p className="persent">92%</p>
-              </div>
-              <div className="bar">
-                <span className="oneAnime"></span>
-              </div>
-            </div>
-            <div className="skill-bar mt-4">
-              <div className="info">
-                <p className="font-bold mb-2 text-white">
-                  Pallet Freight Shipping
-                </p>
-                <p className="persent">85%</p>
-              </div>
-              <div className="bar">
-                <span className="twoAnime"></span>
-              </div>
-            </div>
-            <div className="skill-bar mt-4">
-              <div className="info">
-                <p className="font-bold mb-2 text-white">Intermodal Shipping</p>
-                <p className="persent">75%</p>
-              </div>
-              <div className="bar">
-                <span className="threeAnime"></span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
