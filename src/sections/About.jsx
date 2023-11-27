@@ -1,10 +1,13 @@
 import {
+  AboutImg,
   AboutSlide1,
   AboutSlide2,
   AboutSlide3,
   AboutSlide4,
   AboutSlide5,
+  AboutSlide6,
 } from "../assets";
+
 
 const AboutData = [
   { id: 1, img: AboutSlide1 },
@@ -12,21 +15,17 @@ const AboutData = [
   { id: 3, img: AboutSlide3 },
   { id: 4, img: AboutSlide4 },
   { id: 5, img: AboutSlide5 },
-  { id: 6, img: AboutSlide1 },
-  { id: 7, img: AboutSlide2 },
-  { id: 8, img: AboutSlide3 },
-  { id: 9, img: AboutSlide4 },
-  { id: 10, img: AboutSlide5 },
-  { id: 11, img: AboutSlide1 },
-  { id: 12, img: AboutSlide2 },
-  { id: 13, img: AboutSlide3 },
-  { id: 14, img: AboutSlide4 },
-  { id: 15, img: AboutSlide5 },
-  { id: 15, img: AboutSlide1 },
-  { id: 17, img: AboutSlide2 },
-  { id: 43, img: AboutSlide3 },
-  { id: 44, img: AboutSlide4 },
-  { id: 55, img: AboutSlide5 },
+  { id: 6, img: AboutSlide6 },
+  { id: 9, img: AboutSlide1 },
+  { id: 10, img: AboutSlide2 },
+  { id: 11, img: AboutSlide3 },
+  { id: 12, img: AboutSlide4 },
+  { id: 13, img: AboutSlide5 },
+  { id: 14, img: AboutSlide6 },
+  { id: 17, img: AboutSlide1 },
+  { id: 43, img: AboutSlide2 },
+  { id: 44, img: AboutSlide3 },
+  { id: 55, img: AboutSlide4 },
 ];
 
 const About = () => {
@@ -35,8 +34,8 @@ const About = () => {
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-start justify-around gap-x-10 mobileMax:flex-col mobileLg:items-center">
         <div className="flex items-center flex-col mobileMax:flex-row mobileMax:justify-between mobileMax:gap-x-12 mobileMax:mb-12 mobileLg:flex-col-reverse mobileLg:items-center">
           <img
-            src=""
-            className="w-[300px] h-[200px] border"
+            src={AboutImg}
+            className="w-[300px] h-[200px] rounded-sm"
             alt="about Truck"
           />
           <span className="flex items-start flex-col mt-6 mobileLg:items-center">
@@ -67,7 +66,7 @@ const About = () => {
             <div key={item.id}>
               <img
                 src={item.img}
-                className="rounded-lg inline-block mr-5 object-cover maxSm:mr-0"
+                className="rounded-lg h-full w-[200px] inline-block mr-5 object-cover maxSm:mr-0"
               />
             </div>
           ))}
@@ -79,7 +78,7 @@ const About = () => {
               <img
                 key={item.id}
                 src={item.img}
-                className="rounded-lg inline-block object-cover mr-5 maxSm:mr-0"
+                className="rounded-lg h-full w-[200px] inline-block object-cover mr-5 maxSm:mr-0"
               />
             </div>
           ))}
