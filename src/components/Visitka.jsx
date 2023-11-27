@@ -1,11 +1,6 @@
 import {
   Clock,
-  facebook,
-  Instagram,
-  Linkedin,
   Location,
-  Twitter,
-  YouTube,
 } from "../assets";
 
 const Visitka = () => {
@@ -14,10 +9,10 @@ const Visitka = () => {
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-center justify-between">
         <span className="flex items-center gap-x-1">
           <img src={Clock} className="w-5 h-5" alt="" />
-          <small className="flex items-center">
-            <h4 className="font-bold">Opening Hours:</h4>
-            <p>
-              Mon-Fri 6am to 11am <span>&gt;</span> Closed on Weekends
+          <small className="flex items-center gap-x-2">
+            <h4 className="font-bold text-[12px]">Working hours:</h4>
+            <p className="text-[12px]">
+              Available every day of the year 24 / 7 / 52
             </p>
           </small>
         </span>
