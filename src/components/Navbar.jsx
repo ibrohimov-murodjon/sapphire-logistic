@@ -118,7 +118,7 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <div
                 key={index}
-                className={`flex items-center gap-x-4 mb-4  p-4 rounded-full mx-3 ${
+                className={`flex items-center cursor-pointer gap-x-4 mb-4  p-4 rounded-full mx-3 ${
                   active === link.name
                     ? "bg-white bg-opacity-30 backdrop-filter backdrop-blur-md"
                     : "hover:bg-white hover:bg-opacity-30 hover:backdrop-filter"
@@ -129,7 +129,7 @@ const Navbar = () => {
                 <a
                   href={`/#${link.to}`}
                   key={index}
-                  className="relative text-white font-bold text-xl hover:text-[#ED3237]"
+                  className="relative text-white font-bold text-xl"
                 >
                   {link.name}
                 </a>

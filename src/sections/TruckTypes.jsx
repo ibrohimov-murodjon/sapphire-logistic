@@ -38,7 +38,7 @@ const footerData = [
 ];
 
 const TruckTypes = () => {
-  const [name, setName] = useState(1);
+  const [val, setVal] = useState(1);
   const [price, setPrice] = useState("1");
   const [showErrorMessage, setShowErrorMessage] = useState(false);
 
@@ -64,14 +64,14 @@ const TruckTypes = () => {
       <div className="myContainer mx-auto pb-28">
         <div className="relative flex max-w-[80%] border  shadow-2xl rounded-t-lg mx-auto mt-4 mobileLg:flex-col mobileLg:items-center mobileLg:h-fit">
           <div className="w-[60%]">
-            {name === 1 ? (
-              <Calculation setName={setName} name={name} data={footerData[0]} />
-            ) : name === 2 ? (
-              <Calculation setName={setName} name={name} data={footerData[1]} />
-            ) : name === 3 ? (
-              <Calculation setName={setName} name={name} data={footerData[2]} />
-            ) : name === 4 ? (
-              <Calculation setName={setName} name={name} data={footerData[3]} />
+            {val === 1 ? (
+              <Calculation setVal={setVal} name={val} data={footerData[0]} />
+            ) : val === 2 ? (
+              <Calculation setVal={setVal} name={val} data={footerData[1]} />
+            ) : val === 3 ? (
+              <Calculation setVal={setVal} name={val} data={footerData[2]} />
+            ) : val === 4 ? (
+              <Calculation setVal={setVal} name={val} data={footerData[3]} />
             ) : (
               ""
             )}
@@ -85,14 +85,14 @@ const TruckTypes = () => {
                 maxLength={7}
                 placeholder=" "
                 class={`w-[240px] bg-white text-[#242525] focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-4 px-3 block appearance-none leading-normal  maxSm:max-w-[200px]  mobileMax:max-w-[170px] mobileMax:py-3 
-               focus:border-blue-400 ${name === 4 ? "hidden" : ""}`}
+               focus:border-blue-400 ${val === 4 ? "hidden" : ""}`}
                 onChange={(e) => handlePrice(e)}
                 value={price}
               />
               <label
                 for="name"
                 class={`absolute top-[55px] left-[5px] pointer-events-none transition duration-200 ease-in-outbg-white px-2 text-grey-darker ${
-                  name === 4 ? "hidden" : ""
+                  val === 4 ? "hidden" : ""
                 }`}
               >
                 Miles
@@ -105,23 +105,23 @@ const TruckTypes = () => {
             </div>
             <div className="bg-[#fff] h-[1px] w-full mt-4"></div>
             <div className="pt-[28px] desktopMin:flex desktopMin:items-center desktopMin:justify-center desktopMin:flex-col desktopMin:pl-4">
-              <span className={`${name === 4 ? "hidden" : ""}`}>
+              <span className={`${val === 4 ? "hidden" : ""}`}>
                 Total Payment
               </span>
-              <h1 className="text-5xl font-bold pt-[28px] max-w-[300px] leading-tight w-full desktopMin:text-4xl mobileMax:text-2xl mobileLg:text-center">
-                {name === 1
+              <h1 className="text-5xl text-[#c2e1eb] font-bold pt-[28px] max-w-[300px] leading-tight w-full desktopMin:text-4xl mobileMax:text-2xl mobileLg:text-center">
+                {val === 1
                   ? `$ ${(footerData[0].fromPrice * Number(price)).toFixed(
                       2
                     )} - $ ${(footerData[0].toPrice * Number(price)).toFixed(
                       2
                     )}`
-                  : name === 2
+                  : val === 2
                   ? `$ ${(footerData[1].fromPrice * Number(price)).toFixed(
                       2
                     )} - $ ${(footerData[1].toPrice * Number(price)).toFixed(
                       2
                     )}`
-                  : name === 3
+                  : val === 3
                   ? `$ ${(footerData[2].fromPrice * Number(price)).toFixed(
                       2
                     )} - $ ${footerData[2].toPrice * Number(price).toFixed(2)}`
@@ -130,23 +130,30 @@ const TruckTypes = () => {
             </div>
           </div>
         </div>
-        <ul className="flex items-center desktopMid:flex-wrap justify-center gap-x-3 max-w-[80%] mx-auto shadow-2xl  bg-white bg-opacity-30 backdrop-filter backdrop-blur-md rounded-bl-lg rounded-br-lg desktopMin:hidden">
+        <ul className="flex items-center desktopMid:flex-wrap justify-center gap-3 max-w-[80%] mx-auto shadow-2xl border rounded-bl-lg rounded-br-lg desktopMin:hidden">
           {footerData.map((e) => {
             const { id, name, img, link, fromPrice, toPrice } = e;
             return (
               <li
-                onClick={() => setName(id)}
+                onClick={() => setVal(id)}
                 key={id}
-                className={`flex items-center flex-col w-full max-w-[336px]  py-[50px] px-3 cursor-pointer hover:shadow-xl`}
+                className={`flex items-center flex-col w-full max-w-[336px]  py-[50px] px-3 cursor-pointer h-[300px] ${
+                  id === val
+                    ? "bg-white bg-opacity-30 backdrop-filter backdrop-blur-md"
+                    : "hover:bg-white hover:bg-opacity-30 hover:backdrop-filter"
+                }`}
               >
-                <img src={img} className="max-w-[200px] object-cover" />
-                <p className="text-[#fff] text-[16px] font-bold text-center py-5">
+                <img
+                  src={img}
+                  className="max-w-[200px] h-[45px] object-cover"
+                />
+                <p className=" text-[16px] font-bold text-center py-5">
                   {name}
                 </p>
-                <p className="text-[#242525] text-[16px] text-center">
+                <p className="text-[#c2e1eb] text-[16px] text-center">
                   Per mile
                 </p>
-                <span className="text-[#242525] pt-[25px] text-2xl font-bold pb-[10px]">
+                <span className="text-[#c2e1eb] pt-[25px] text-2xl font-bold pb-[10px]">
                   {`$ ${fromPrice} - $ ${toPrice}`}
                 </span>
               </li>
