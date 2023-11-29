@@ -1,16 +1,16 @@
 import React from "react";
 import { DoneIcon, SmallTruck, ArrowIcon } from "../assets";
 
-function Calculation({ data, setName, name }) {
+function Calculation({ data, setVal, name }) {
   const next = () => {
     if (name < 4) {
-      setName(name + 1);
+      setVal(name + 1);
     }
   };
 
   const prev = () => {
     if (name > 1) {
-      setName(name - 1);
+      setVal(name - 1);
     }
   };
 
@@ -21,7 +21,7 @@ function Calculation({ data, setName, name }) {
           {data?.name}
         </h1>
         <span className=" pt-[25px]">Per mile</span>
-        <span className=" pt-[25px] text-2xl font-bold pb-[10px]">
+        <span className=" pt-[25px] text-2xl text-[#c2e1eb] font-bold pb-[10px]">
           {`$ ${data?.fromPrice} - $ ${data?.toPrice}`}
         </span>
         <div className="flex items-center gap-2">
