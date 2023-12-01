@@ -121,19 +121,19 @@ body {
   align-items: center;
 }
 .slider1 {
-  background-image: linear-gradient(0deg,rgba(47,52,58,.50),rgba(47,52,58,.50)),url(./assets/hero-slider-1.png);
+  background-image: linear-gradient(0deg,rgba(47,52,58,.50),rgba(47,52,58,.50)),url(./assets/efficient-truck-hd.jpg);
   background-repeat: no-repeat;
   background-position:  center;
   background-size: cover;
 }
-.slider2 {
+/* .slider2 {
   background-image: linear-gradient(0deg,rgba(47,52,58,.50),rgba(47,52,58,.50)),url(./assets/her-slider-2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
+} */
 .slider3 {
-  background-image: linear-gradient(0deg,rgba(47,52,58,.50),rgba(47,52,58,.50)),url(./assets/hero-slider-3.png);
+  background-image: linear-gradient(0deg,rgba(47,52,58,.50),rgba(47,52,58,.50)),url(./assets/new-truck-hd.png);
   background-repeat: no-repeat;
   background-position: center right;
   background-size: cover;
