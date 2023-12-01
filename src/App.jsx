@@ -16,7 +16,7 @@ function App() {
   const [page, setPage ] = useState(false)
   setTimeout(() => {
         setPage(true)
-  }, 5000);
+  }, 3000);
   return (
     <>
       <div className={`${!page ? 'flex' : 'hidden' } text-black justify-center items-center h-screen w-full bg-slate-600`}>
