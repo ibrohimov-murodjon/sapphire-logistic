@@ -1,4 +1,4 @@
-import { CallImgWhite, EmailIcon, Location, LocationWhite } from "../assets";
+import { CallImgWhite, EmailIcon, LocationWhite} from "../assets";
 import { Button, Input } from "../components";
 
 const Contact = () => {

@@ -4,7 +4,6 @@ import {
   logo,
   close,
   burger,
-  AboutUsIcon,
   ServicesIcon,
   TruckTypesIcon,
   FAQIcon,
@@ -12,18 +11,12 @@ import {
   HomeIcon,
 } from "../assets";
 import Button from "./Button";
-import NewLogo from '../assets/ST-logo-svg.svg'
 
 const navLinks = [
   {
     name: "Home",
     to: "home",
     logo: HomeIcon,
-  },
-  {
-    name: "About",
-    to: "about",
-    logo: AboutUsIcon,
   },
   {
     name: "Services",

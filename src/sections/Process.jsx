@@ -1,5 +1,4 @@
 import {
-  AboutSlide1,
   MessageIcon,
   ProposalIcon,
   TruckIcon,
@@ -48,12 +47,6 @@ const Process = () => {
           >
             Contact Us
           </a>
-          {/* <Button
-            title="Get Started"
-            width="200px"
-            padding="py-6 px-4"
-            textClr="white"
-          /> */}
         </div>
         <div>
           <div class="v-progress">
@@ -78,37 +71,6 @@ const Process = () => {
         </div>
       </div>
     </section>
-    // <div className="w-full lightBlue py-20">
-    //   <div className="myContainer mx-auto flex flex-col items-center">
-    //     <h1 className="text-center  text-[40px] text-black font-bold w-full max-w-[600px] mb-10">
-    //       Out Priority is to transport with care and responsibility
-    //     </h1>
-    //     <ul className="flex items-center flex-wrap justify-between gap-4">
-    //       {processData.map((element) => {
-    //         const { id, title, text, img } = element;
-    //         return (
-    //           <div
-    //             className="relative flex items-center flex-col text-center w-full max-w-[250px]"
-    //             key={id}
-    //           >
-    //             <img
-    //               src={img}
-    //               className="rounded-full w-[150px] h-[150px] border-[7px] border-[#fdeeb3]"
-    //               alt=""
-    //             />
-    //             <p className="absolute top-0 left-[50px] py-2 px-3 bg-[#ffdb53] rounded-full">
-    //               0{id}
-    //             </p>
-    //             <h3 className="mt-6 mb-3 font-bold capitalize text-[20px] text-black">
-    //               {title}
-    //             </h3>
-    //             <p className="text-gray-400 w-full">{text}</p>
-    //           </div>
-    //         );
-    //       })}
-    //     </ul>
-    //   </div>
-    // </div>
   );
 };
 
