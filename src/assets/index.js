@@ -39,3 +39,4 @@ export { default as expedited } from "./expedited.svg";
 export { default as crossDock } from "./cross_dock.svg";
 export { default as crossBordering } from "./cros_bordering.svg";
 export { default as LocationWhite } from "./location-img-white.svg";
+export { default as CustomerSupport } from "./customer-support.svg";

@@ -46,14 +46,14 @@ const FAQs = () => {
         </div>
         <div>
           <ul className="flex flex-col gap-y-3">
-            {faqData.map((element) => {
+            {faqData.map((element, index) => {
               return (
-                <>
+                <div key={index}>
                   <FaqQuestions
                     question={element.question}
                     response={element.responce}
                   />
-                </>
+                </div>
               );
             })}
           </ul>

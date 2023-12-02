@@ -51,23 +51,28 @@ const changeTransport = [
 const FreightServices = () => {
   const [name, setName] = useState("ftl");
   return (
-    <div className="bg-[#3e4095] services-bg pt-32 pb-20 mobileMax:pb-10 " id="services">
+    <div
+      className="bg-[#3e4095] services-bg pt-32 pb-20 desktopMid:pt-24  mobileMax:pb-10"
+      id="services"
+    >
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex justify-center flex-col">
         <h1 className="text-center text-[40px] font-bold mb-3 mobileLg:text-[30px] mobileMd:text-[26px]">
           Our Services
         </h1>
-        <ul className="flex items-center justify-center gap-x-3">
+        <ul className="flex flex-wrap gap-y-4 items-center justify-center gap-x-3">
           {navbarData.map((e) => {
             const { id, name: text, img, link } = e;
             return (
               <span
                 onClick={() => setName(link)}
                 key={id}
-                className={`${name == link ? 'bg-white bg-opacity-40 ' : 'border' } flex cursor-pointer items-center flex-col w-full max-w-[150px]  bg-opacity-30 backdrop-filter backdrop-blur-md py-3 mobileMax:py-1`}
+                className={`${
+                  name == link ? "bg-white bg-opacity-40 " : "border"
+                } flex cursor-pointer items-center flex-col w-full max-w-[150px]  bg-opacity-30 backdrop-filter backdrop-blur-md py-3 mobileMax:py-1`}
               >
                 <img
                   src={img}
-                  className="w-14 bg-center h-14 tabletMax:w-8 tabletMax:h-8 mobileMax:w-6 mobileMax:h-6 mobileLg:w-6 mobileLg:h-6"
+                  className="w-14 bg-center h-14 tabletMax:w-12 tabletMax:h-12 mobileMax:w-10 mobileMax:h-10 mobileLg:w-8mobileLg:h8"
                 />
                 <p className="tabletMax:text-xs text-center mobileMax:text-[11px] mobileLg:hidden">
                   {text}
@@ -76,7 +81,7 @@ const FreightServices = () => {
             );
           })}
         </ul>
-        <hr className="mb-3" />
+        <hr className="mb-3 mt-6" />
         {/* <ServicesEl/> */}
         {name === "ftl" ? (
           <ServicesEl data={changeTransport[0]} />

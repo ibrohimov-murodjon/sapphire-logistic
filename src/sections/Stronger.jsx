@@ -1,4 +1,4 @@
-import { Box, Money, Truck } from "../assets";
+import { Box, Money, Truck, CustomerSupport } from "../assets";
 
 const data = [
   {

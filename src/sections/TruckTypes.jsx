@@ -78,20 +78,20 @@ const TruckTypes = () => {
           </div>
           <div className="bg-[#fff] h-auto w-[1px]"></div>
           <div className="group-[1]:  w-[40%] pb-8 flex flex-col items-center rounded-tr-lg mobileLg:w-full mobileLg:h-[330px] mobileLg:rounded-none mobileLg:pt-0">
-            <div class="relative float-label-input pt-[40px] mobileLg:mt-0 ">
+            <div className="relative float-label-input pt-[40px] mobileLg:mt-0 ">
               <input
                 type="text"
                 id="name"
                 maxLength={7}
                 placeholder=" "
-                class={`w-[240px] bg-white text-[#242525] focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-4 px-3 block appearance-none leading-normal  maxSm:max-w-[200px]  mobileMax:max-w-[170px] mobileMax:py-3 
+                className={`w-[240px] bg-white text-[#242525] focus:outline-none focus:shadow-outline border border-gray-300 rounded-md py-4 px-3 block appearance-none leading-normal  maxSm:max-w-[200px]  mobileMax:max-w-[170px] mobileMax:py-3 
                focus:border-blue-400 ${val === 4 ? "hidden" : ""}`}
                 onChange={(e) => handlePrice(e)}
                 value={price}
               />
               <label
-                for="name"
-                class={`absolute top-[55px] left-[5px] pointer-events-none transition duration-200 ease-in-outbg-white px-2 text-grey-darker ${
+                htmlFor="name"
+                className={`absolute top-[55px] left-[5px] pointer-events-none transition duration-200 ease-in-outbg-white px-2 text-grey-darker ${
                   val === 4 ? "hidden" : ""
                 }`}
               >

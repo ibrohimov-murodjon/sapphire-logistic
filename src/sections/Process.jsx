@@ -33,7 +33,9 @@ const Process = () => {
     <section className="w-full lightBlue py-[120px] mobileMax:py-[80px]">
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-center justify-between maxSm:flex-col maxSm:gap-16">
         <div className="maxSm:flex maxSm:items-center maxSm:justify-center maxSm:flex-col">
-          <h2 className="text-[42px] font-bold text-black mobileMax:text-center">How does it work</h2>
+          <h2 className="text-[42px] font-bold text-black mobileMax:text-center">
+            How does it work
+          </h2>
           <p className="text-black text-base w-full max-w-[450px] pt-4 pb-12 mobileMax:text-center">
             We know that organizing an efficient freight shipping in a limited
             time frame may challenge enough. So, we undertake this task from
@@ -49,7 +51,7 @@ const Process = () => {
           </a>
         </div>
         <div>
-          <div class="v-progress">
+          <div className="v-progress">
             <ul>
               {processData.map((item) => (
                 <li

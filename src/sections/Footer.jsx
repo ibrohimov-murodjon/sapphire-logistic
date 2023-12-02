@@ -48,8 +48,9 @@ const Footer = () => {
           </div>
           <ul className="flex items-start flex-col tabletMax:hidden">
             <h4 className="font-bold text-[20px] pb-4">Menu</h4>
-            {navLinks.map((link) => (
+            {navLinks.map((link, index) => (
               <a
+                key={index}
                 className="font-bold uppercase mb-2 hover:text-[#ED3237]"
                 href={`#${link.to}`}
               >
@@ -92,8 +93,9 @@ const Footer = () => {
           </div>
         </div>
         <ul className="tabletMax:flex items-start justify-evenly mb-4 mt-2 hidden">
-          {navLinks.map((link) => (
+          {navLinks.map((link, index) => (
             <a
+              key={index}
               className="font-bold uppercase hover:text-[#ED3237]"
               href={`#${link.to}`}
             >

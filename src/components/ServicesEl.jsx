@@ -1,6 +1,6 @@
 const ServicesEl = ({ data }) => {
   return (
-    <div className="flex items-start justify-around mt-9 h-[400px] overflow-y-hidden gap-x-8 mobileMax:flex-col mobileMax:items-center mobileMax:h-fit">
+    <div className="flex items-start justify-around mt-9 overflow-y-hidden gap-x-8 mobileMax:flex-col mobileMax:items-center mobileMax:h-fit">
       <span className="text-center flex flex-col items-center">
         <h3 className="font-bold text-[55px]  w-full max-w-[850px] mb-8 leading-tight maxSm:text-[30px] mobileMax:text-center">
           {data.title}
