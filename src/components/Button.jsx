@@ -1,6 +1,16 @@
-const Button = ({ bgColor, title, color, hover, textClr, padding, hidden }) => {
+const Button = ({
+  bgColor,
+  title,
+  color,
+  hover,
+  textClr,
+  padding,
+  hidden,
+  type,
+}) => {
   return (
     <button
+      type={type}
       style={{ backgroundColor: `${bgColor}` }}
       className={`text-${color}  ${
         bgColor === "transparent" ? "border-[2px] border-[#ED3237]" : ""

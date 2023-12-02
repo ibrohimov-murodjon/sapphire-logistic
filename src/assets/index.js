@@ -60,3 +60,4 @@ export { default as ExpeditedImg } from "./expedited-img.png";
 export { default as WareHousingImg } from "./warehousing-img.jpg";
 export { default as CrossDockImg } from "./cross-dock.jpg";
 export { default as CrossBorderingImg } from "./cross-bordering.jpg";
+export { default as CustomerSupport } from "./customer-support.svg";

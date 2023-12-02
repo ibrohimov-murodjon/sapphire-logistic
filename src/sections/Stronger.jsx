@@ -1,24 +1,24 @@
-import { Box, Money, Truck } from "../assets";
+import { Box, Money, Truck, CustomerSupport } from "../assets";
 import StackImg from "../assets/stack-img.png";
 
 const data = [
   {
     img: Money,
     title: "Rapid Deliveries Across USA & Canada",
-    desc: "Streamline your expedited truck shipment with Sapphire Transportation all over the USA and Canada to ensure your packages reach their destination in the shortest possible time. ",
+    desc: "Streamline your expedited truck shipment with us all over the USA and Canada to ensure your packages reach their destination in the shortest possible time. ",
   },
   {
     img: Box,
     title: "Fast and reliable delivery.",
-    desc: "Sapphire Transportation ensures fast and reliable delivery of your goods - we understand the importance of time sensitive shipments and prioritize efficiency.  Experience hassle-free expedited truck shipment. ",
+    desc: "Ensuring fast and reliable delivery of your goods - we understand the importance of time sensitive shipments and prioritize efficiency.  Experience hassle-free expedited truck shipment. ",
   },
   {
     img: Truck,
     title: "Real-time tracking and updates.",
-    desc: "With Sapphire Transportation - track your shipments in real-time and receive regular updates on their status. Stay informed every step of the way. ",
+    desc: "Track your shipments in real-time and receive regular updates on their status. Stay informed every step of the way. ",
   },
   {
-    img: Truck,
+    img: CustomerSupport,
     title: "Dedicated customer support",
     desc: "Customer satisfaction is prioritized - customer support team is available 24/7 to assist you with any queries or concerns with regard to your expedited shipment.",
   },
@@ -33,7 +33,7 @@ const Stronger = () => {
             Why choose sapphire
           </span>
           <h1 className="text-[40px] text-white font-bold w-full max-w-[500px] leading-normal mb-6 mobileLg:text-[35px] mobileMd:text-center">
-            Transportation Services Like No Other
+            Why run with Sapphire Transportation?
           </h1>
           <ul className="flex flex-wrap justify-between gap-y-12 mt-4 mx-6">
             {data.map((item, index) => (
@@ -43,7 +43,7 @@ const Stronger = () => {
               >
                 <img
                   src={item.img}
-                  className="w-14 h-14 p-3 bg-[#ED3237] rounded-full mobileLg:w-12 mobileLg:h-12"
+                  className="w-14 h-14 p-2 bg-[#ED3237] object-cover rounded-full mobileLg:w-12 mobileLg:h-12"
                   alt=""
                 />
                 <span>
