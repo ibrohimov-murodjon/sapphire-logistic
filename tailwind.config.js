@@ -22,7 +22,6 @@ export default {
         tabletLgMd: { max: "950px" },
         tabletLg: { max: "940px" },
         desktopSm: { max: "910px" },
-        // desktopMid: { max: "880px" },
         desktopMin: { max: "865px" },
         tabletMax: { max: "794px" },
         maxSm: { max: "768px" },

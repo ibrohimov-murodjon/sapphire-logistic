@@ -5,8 +5,8 @@ import {
 
 const Visitka = () => {
   return (
-    <div className="team h-[80px] flex items-center" id="home">
-      <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-center justify-between">
+    <div className="team h-[80px] flex items-center mobileMax:h-[100px]" id="home">
+      <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-center justify-between mobileMax:flex-wrap mobileMax:gap-y-4">
         <span className="flex items-center gap-x-1">
           <img src={Clock} className="w-5 h-5" alt="" />
           <small className="flex items-center gap-x-2">

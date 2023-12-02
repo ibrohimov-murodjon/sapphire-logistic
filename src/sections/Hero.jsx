@@ -6,7 +6,6 @@ import { Autoplay, Mousewheel, EffectFade, Pagination } from "swiper/modules";
 export default function Hero() {
   return (
     <div className="relative flex flex-col">
-      {/* <div class="absolute w-full h-[700px] z-[10] bg-bgVideo"></div> */}
       <Swiper
         direction={"horizontal"}
         slidesPerView={1}
