@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import { CallImgWhite, EmailIcon, Location, LocationWhite } from "../assets";
 import { Button, Input } from "../components";
+import { CallImgWhite, EmailIcon, LocationWhite} from "../assets";
 
 const Modal = ({ showModal, onClose }) => {
   const modalRef = useRef();

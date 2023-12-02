@@ -1,14 +1,10 @@
 import CalculatorLogo from "../assets/calculator.svg";
-import { CallImgWhite, EmailIcon, LocationWhite, Clock } from "../assets";
+import { CallImgWhite, EmailIcon, Clock, LocationWhite } from "../assets";
 
 const navLinks = [
   {
     name: "Home",
     to: "home",
-  },
-  {
-    name: "About",
-    to: "about",
   },
   {
     name: "Services",

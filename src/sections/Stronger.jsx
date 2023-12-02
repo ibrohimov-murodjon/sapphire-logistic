@@ -1,5 +1,4 @@
-import { Box, Money, Truck, CustomerSupport } from "../assets";
-import StackImg from "../assets/stack-img.png";
+import { Box, Money, Truck } from "../assets";
 
 const data = [
   {
