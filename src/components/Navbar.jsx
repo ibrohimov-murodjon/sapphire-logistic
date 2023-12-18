@@ -9,6 +9,7 @@ import {
   FAQIcon,
   ContactIcon,
   HomeIcon,
+  AboutIcon,
 } from "../assets";
 import Button from "./Button";
 
@@ -17,6 +18,11 @@ const navLinks = [
     name: "Home",
     to: "home",
     logo: HomeIcon,
+  },
+  {
+    name: "About",
+    to: "about",
+    logo: AboutIcon,
   },
   {
     name: "Services",
@@ -28,11 +34,11 @@ const navLinks = [
     to: "truckTypes",
     logo: TruckTypesIcon,
   },
-  {
-    name: "FAQ",
-    to: "faq",
-    logo: FAQIcon,
-  },
+  // {
+  //   name: "FAQ",
+  //   to: "faq",
+  //   logo: FAQIcon,
+  // },
   {
     name: "Contact",
     to: "contact",
