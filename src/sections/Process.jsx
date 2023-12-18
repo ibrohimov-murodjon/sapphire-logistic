@@ -3,28 +3,29 @@ import {
   ProposalIcon,
   TruckIcon,
   PackageIcon,
+  TailoredSolution,
 } from "../assets";
 import { Button } from "../components";
 
 const processData = [
   {
     id: 1,
-    text: "Submit your request and enter the shipment details",
-    img: MessageIcon,
+    text: "Choose Your Optimal Truck Type and Get Instant Pricing",
+    img: TruckIcon,
   },
   {
     id: 2,
-    text: "We examine your request and propose several effective solutions",
+    text: "Share Your Shipment Details",
     img: ProposalIcon,
   },
   {
     id: 3,
-    text: "You choose the most suitable solution and we provide the carrier",
-    img: TruckIcon,
+    text: "Tailored Solutions Proposal",
+    img: TailoredSolution,
   },
   {
     id: 4,
-    text: "Your freight is delivered",
+    text: "Your Cargo is En Route",
     img: PackageIcon,
   },
 ];
@@ -34,18 +35,17 @@ const Process = () => {
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-center justify-between maxSm:flex-col maxSm:gap-16">
         <div className="maxSm:flex maxSm:items-center maxSm:justify-center maxSm:flex-col">
           <h2 className="text-[42px] font-bold text-black mobileMax:text-center">
-            How does it work
+            How it Works with Us
           </h2>
           <p className="text-black text-base w-full max-w-[450px] pt-4 pb-12 mobileMax:text-center">
-            We know that organizing an efficient freight shipping in a limited
-            time frame may challenge enough. So, we undertake this task from
-            start to finish: planning the most suitable route, selecting the
-            transportation mode, and careful freight handling (loading and
-            unloading)
+            Coordinating logistics with precision is crucial, especially when
+            time is a critical factor. At Sapphire, we simplify the process,
+            ensuring a smooth journey for your shipments from the initial
+            inquiry to the final destination.
           </p>
           <a
-            href="#"
-            className="bg-[#5D3E85] py-6 px-8 rounded-lg text-base font-medium"
+            href="#contact"
+            className="bg-[#3E4095] py-6 px-8 rounded-lg text-base font-medium"
           >
             Contact Us
           </a>

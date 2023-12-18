@@ -50,7 +50,7 @@ function App() {
           <FreightServices />
           <Proces />
           <TruckTypes />
-          <FAQs />
+          {/* <FAQs /> */}
           <Contact />
           <Footer />
         </>

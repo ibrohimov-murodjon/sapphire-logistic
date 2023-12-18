@@ -7,16 +7,16 @@ const navLinks = [
     to: "home",
   },
   {
+    name: "About",
+    to: "about",
+  },
+  {
     name: "Services",
     to: "services",
   },
   {
     name: "Truck Types",
     to: "truckTypes",
-  },
-  {
-    name: "FAQ",
-    to: "faq",
   },
   {
     name: "Contact",

@@ -77,7 +77,7 @@ const Contact = () => {
     setShowModal(false);
   };
   return (
-    <div className="advantages py-10" id="contact">
+    <div className="advantages py-24" id="contact">
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex items-center justify-around tabletMax:flex-col tabletMax:gap-y-5">
         <div className="flex items-start justify-center flex-col gap-y-3 w-full max-w-[500px]">
           <h1 className="text-white text-[50px] font-bold">Contact US</h1>
