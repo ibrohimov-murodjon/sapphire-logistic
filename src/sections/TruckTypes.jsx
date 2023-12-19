@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Slide } from "react-awesome-reveal";
 import { SemiTruck, SmallTruck, LargeTruck, SprinterVan } from "../assets";
 import { Calculation } from "../components";
 
@@ -60,9 +61,11 @@ const TruckTypes = () => {
 
   return (
     <div className="bg-[#3e4095]" id="truckTypes">
-      <h1 className="text-center text-5xl font-bold py-12">Truck Types</h1>
+      <Slide direction="down" duration={1800}>
+        <h1 className="text-center text-5xl font-bold py-12">Truck Types</h1>
+      </Slide>
       <div className="myContainer mx-auto pb-28">
-        <div className="relative flex max-w-[80%] border  shadow-2xl rounded-t-lg mx-auto mt-4 mobileLg:flex-col mobileLg:items-center mobileLg:h-fit">
+        <div className="relative flex max-w-[80%]  border  shadow-2xl rounded-t-lg mx-auto mt-4 mobileLg:flex-col mobileLg:items-center mobileLg:h-fit">
           <div className="w-[60%]">
             {val === 1 ? (
               <Calculation setVal={setVal} name={val} data={footerData[0]} />
