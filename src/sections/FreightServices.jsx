@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Slide } from "react-awesome-reveal";
 import {
   crossBordering,
   crossDock,
@@ -56,9 +57,11 @@ const FreightServices = () => {
       id="services"
     >
       <div className="mx-auto w-full max-w-[1246px] px-[20px] flex justify-center flex-col">
-        <h1 className="text-center text-[40px] font-bold mb-3 mobileLg:text-[30px] mobileMd:text-[26px]">
-          Our Services
-        </h1>
+        <Slide direction="down" duration={2000}>
+          <h1 className="text-center text-[40px] font-bold mb-3 mobileLg:text-[30px] mobileMd:text-[26px]">
+            Our Services
+          </h1>
+        </Slide>
         <ul className="flex flex-wrap gap-y-4 items-center justify-center gap-x-3">
           {navbarData.map((e) => {
             const { id, name: text, img, link } = e;
