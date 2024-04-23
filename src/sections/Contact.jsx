@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { Button, Input } from "../components";
-import { CallImgWhite, EmailIcon, LocationWhite} from "../assets";
+import { CallImgWhite, EmailIcon, LocationWhite } from "../assets";
 
 const Modal = ({ showModal, onClose }) => {
   const modalRef = useRef();
@@ -83,18 +83,33 @@ const Contact = () => {
           <h1 className="text-white text-[50px] font-bold">Contact US</h1>
           <span className="flex flex-col items-start justify-center">
             <img src={CallImgWhite} className="w-8 h-8 mb-2" alt="" />
-            <h4 className=" font-bold text-[20px]">Phone Number</h4>
-            <p>+1 469 998 8555</p>
+            <h4 className=" font-bold text-[20px]">Phone Numbers</h4>
+            <div className="flex items-center gap-8">
+              <a
+                href="tel:(224) 222-1201"
+                className="underline underline-offset-2"
+              >
+                (224) 222-1201
+              </a>
+              <a
+                href="tel:(224) 222-0582"
+                className="underline underline-offset-2"
+              >
+                (224) 222-0582
+              </a>
+            </div>
           </span>
           <span className="flex flex-col items-start justify-center">
             <img src={EmailIcon} className="w-8 h-8 mb-2" alt="" />
             <h4 className=" font-bold text-[20px]">Email</h4>
-            <p>recruiting@unitedbrother.us</p>
+            <a href="mailto:info@sapphire-transportation.com">
+              info@sapphire-transportation.com
+            </a>
           </span>
           <span className="flex flex-col items-start justify-center">
             <img src={LocationWhite} className="w-8 h-8 mb-2" alt="" />
             <h4 className=" font-bold text-[20px]">Location</h4>
-            <p>New York</p>
+            <p>108 Manchester Dr, Buffalo Grove, IL 60089</p>
           </span>
         </div>
         <div className="flex rounded-[10px] flex-col lightBlue w-full max-w-[600px] py-10 px-14 mobileMax:max-w-[500px] mobileLg:max-w-[400px] mobileLg:px-8 mobileMd:max-w-[350px] mobileMd:px-4  mobileSm:max-w-[320px]">

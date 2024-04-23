@@ -62,13 +62,16 @@ const Footer = () => {
             <span className="flex items-center gap-x-2 pb-3">
               <img src={LocationWhite} className="w-5 h-5" alt="" />
               <p className="text-[15px] font-bold max-w-[350px] ">
-                1019 THORNDALE CT UNIT A2, WHEELING, IL 60641
+                108 Manchester Dr, Buffalo Grove, IL 60089
               </p>
             </span>
             <span className="flex items-center gap-x-2 pb-4">
               <img src={CallImgWhite} className="w-5 h-5" alt="" />
-              <a href="tel:+1 (224) 313-0103" className="font-bold text-[15px]">
-                +1 (224) 313-0103
+              <a
+                href="tel:(224) 222-1201"
+                className="font-bold text-[15px] hover:underline hover:underline-offset-2"
+              >
+                (224) 222-1201
               </a>
             </span>
             <span className="flex items-center gap-x-2 pb-4">
@@ -84,10 +87,10 @@ const Footer = () => {
             <span className="flex items-center gap-x-2">
               <img src={EmailIcon} className="w-5 h-5" alt="" />
               <a
-                href="mailto:INFO@EZTRANSGROUP.COM"
+                href="mailto:info@sapphire-transportation.com"
                 className="font-bold text-[15px]"
               >
-                INFO@EZTRANSGROUP.COM
+                info@sapphire-transportation.com
               </a>
             </span>
           </div>

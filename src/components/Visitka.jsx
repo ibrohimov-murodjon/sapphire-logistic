@@ -25,7 +25,9 @@ const Visitka = () => {
               <img src={Location} className="w-5 h-5" alt="" />
               <small className="flex items-center gap-x-2">
                 <h4 className="font-bold text-[14px]">Location Near you:</h4>
-                <p className="font-bold text-[14px]">New York</p>
+                <p className="font-bold text-[14px]">
+                  108 Manchester Dr, Buffalo Grove, IL 60089
+                </p>
               </small>
             </span>
           </div>
