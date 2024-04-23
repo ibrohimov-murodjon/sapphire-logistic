@@ -35,11 +35,6 @@ const navLinks = [
     to: "truckTypes",
     logo: TruckTypesIcon,
   },
-  // {
-  //   name: "FAQ",
-  //   to: "faq",
-  //   logo: FAQIcon,
-  // },
   {
     name: "Contact",
     to: "contact",
@@ -85,8 +80,11 @@ const Navbar = () => {
                 />
                 <span className="flex items-center flex-col w-full max-w-[150px] tabletLgMax:hidden">
                   <h6 className="w-full max-w-[150px]">Call Us anytime</h6>
-                  <a className="w-full max-w-[150px]" href="tel:+998941213399">
-                    +998 94 1213399
+                  <a
+                    className="w-full max-w-[150px] hover:underline hover:underline-offset-2"
+                    href="tel:(224) 222-1201"
+                  >
+                    (224) 222-1201
                   </a>
                 </span>
               </div>
