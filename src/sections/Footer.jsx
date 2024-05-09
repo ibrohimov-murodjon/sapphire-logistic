@@ -62,7 +62,7 @@ const Footer = () => {
             <span className="flex items-center gap-x-2 pb-3">
               <img src={LocationWhite} className="w-5 h-5" alt="" />
               <p className="text-[15px] font-bold max-w-[350px] ">
-                108 Manchester Dr, Buffalo Grove, IL 60089
+                570 Le Parc CIR, Buffalo Grove, IL 60089
               </p>
             </span>
             <span className="flex items-center gap-x-2 pb-4">
